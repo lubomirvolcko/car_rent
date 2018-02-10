@@ -1,17 +1,165 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<script src="jquery-3.2.1.min.js"></script>
-	<title>Car Rent</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>CarRent</title>
 </head>
-<body>
+<body id="body">
+    <div class="container">
+    
+    <div class="row" id="navbar"> <!-- navbar -->
+    <div class="col-md-12">
+        
+    </div>
+    </div> <!-- ROW navbar -->     
+        
+    <div class="row" id="slideShow"> <!-- slideshow -->
+    <div class="col-md-12">
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="design/Mustang.png" alt="Los Angeles">
+       <div class="carousel-caption">
+        <h3>FORD MUSTANG V6 5.0</h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="design/audi.jpg" alt="Chicago">
+       <div class="carousel-caption">
+        <h3>AUDI A8</h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="design/x6.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>BMW X6</h3>
+       
+      </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="design/amg.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>Mercedes-AMG Roadster  GT S</h3>
+       
+      </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="design/bentley.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>BENTLEY MULSANNE</h3>
+       
+      </div>
+  </div>
+
+  <div class="carousel-item">
+      <img src="design/bugatti.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>BUGATTI CHIRON</h3>
+        
+      </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="design/camaro.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>CHEVROLET CAMARO</h3>
+       
+      </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="design/mc720s.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>MCLAREN 720 S</h3>
+        
+      </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="design/rr.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h3>ROLLS-ROYCE WRAITH</h3>
+        
+      </div>
+  </div>
+
+
+
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+        
+    </div>
+    </div> <!-- ROW slideshow -->
+    
+    <div id="blocks">
+    <div class="row" id="firstBlockLink"> <!-- firstBlockLink -->
+    <div class="col-md-12">
+        <p id="fisrtBlockLinkText">CHOOSE<br> YOUR <br> CAR</p>
+        <img src="design/firstBlockLinkImg.png" id="firstBlockLinkImg">       
+    </div>
+    </div> <!-- ROW firstBlockLink -->
+        
+    <div class="row" id="secondBlockLink"> <!-- secondBlockLink -->
+    <div class="col-md-12">
+        <p id="secondBlockLinkText">CHECK<br> THE <br> PRICE</p>
+        <img src="design/secondBlockLinkImg.png" id="firstBlockLinkImg">       
+    </div>
+    </div> <!-- ROW secondBlockLink -->
+        
+    <div class="row" id="thirdBlockLink"> <!-- thirdBlockLink -->
+    <div class="col-md-12">
+        <p id="thirdBlockLinkText">MAKE<br>ORDER</p>
+        <img src="design/thirdBlockLinkImg.png" id="firstBlockLinkImg">       
+    </div>
+    </div> <!-- ROW thirdBlockLink -->
+        
+    <div class="row"> <!-- thirdBlockLink -->
+    <div class="col-md-12" id="footer">              
+    </div>
+    </div> <!-- ROW thirdBlockLink -->
+    </div>
+        
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    </div> <!-- ROW -->
+    
+    </div><!-- CONTAINER -->
 </body>
 </html>
