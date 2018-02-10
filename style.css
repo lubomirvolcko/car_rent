@@ -6,10 +6,34 @@ body {
 
 
 
-#navbar {
+th {
+    font-family: Bahnschrift, sans-serif;
     margin-top: 2vw;
     height: 3vw;
+    text-align: center;
     background-color: #1e394c;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+   
+    margin-left: 1px;
+}
+
+#home,#cars,#pricelist,#order,#rent,#contact
+{
+    
+     cursor: pointer;
+filter: brightness(75%);
+
+    
+}
+
+#home:hover,#cars:hover,#pricelist:hover,#order:hover,#rent:hover,#contact:hover
+{
+    
+     cursor: pointer;
+     filter: brightness(100%);
+    
 }
 
 /*#slideShow {
