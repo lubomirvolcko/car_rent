@@ -2,9 +2,9 @@ body {
     background: linear-gradient(#dad9d5, white);
 }
 
-
-
-
+#navbar {
+    background-color: #1e394c;
+}
 
 th {
     font-family: Bahnschrift, sans-serif;
@@ -14,18 +14,15 @@ th {
     background-color: #1e394c;
     font-size: 15px;
     color: white;
-    font-weight: bold;
-   
+    font-weight: bold;   
     margin-left: 1px;
 }
 
 #home,#cars,#pricelist,#order,#rent,#contact
-{
-    
-     cursor: pointer;
-filter: brightness(75%);
-
-    
+{   
+    cursor: pointer;
+    filter: brightness(75%);
+    text-align: center;
 }
 
 #home:hover,#cars:hover,#pricelist:hover,#order:hover,#rent:hover,#contact:hover
@@ -33,6 +30,7 @@ filter: brightness(75%);
     
      cursor: pointer;
      filter: brightness(100%);
+    border-bottom: 3px solid #89c64a;
     
 }
 
