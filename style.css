@@ -22,42 +22,74 @@ th {
     margin-left: 1px;
 }
 
-td {
-    font-size: 25px;
-    margin-left: 1px;
-    text-align: center;
-    height: 2vw;
+.width{
+    margin-top: 40%;
+    width: 110%;
 }
 
-.href:link { color: #1e394c; }
-.href:visited { color: #1e394c; }
-.href:hover { color: #1e394c; }
-.href:active { color: #1e394c; }
-.href:focus { color: #1e394c; }
-
 #car{
+    text-align: center;
+    font-size: 18px;
     color: #1e394c;
     font-weight: bold;
-    height: 3vw;
+    margin-top: 15%;
 }
 
 .textdecoration{
     color: white;
+    text-align: center;
 }
 
-#realprice{
-    text-align: left;
-    color: red;
+.realprice{
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 3%;
+    margin-right: 15%;
+    color: lime;
 }
 
-#home,#cars,#pricelist,#order,#rent,#contact,#luxurycars,#economycars,#pricelist2,#sportcars,#vans
+.panels{
+    text-align: center;
+}
+
+.navcars{
+    color: #1e394c;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.imgdecoration{
+    width: 13%;
+}
+
+.bgcolor{
+   background-color: #8e9ca5;
+}
+
+.bgcolorcar{
+    background-color: #acb0b9;
+}
+
+.imgsize{
+    width: 17%;
+    cursor: pointer;
+}
+
+.sizepricelist{
+    width: 35%;
+    cursor: pointer;
+}
+
+#home,#cars,#pricelist,#order,#rent,#contact
 {   
     cursor: pointer;
     filter: brightness(75%);
     text-align: center;
 }
 
-#home:hover,#cars:hover,#pricelist:hover,#order:hover,#rent:hover,#contact:hover,#economycars:hover,#luxurycars:hover,#pricelist2:hover,#sportcars:hover,#vans:hover
+#home:hover,#cars:hover,#pricelist:hover,#order:hover,#rent:hover,#contact:hover
 {
     
     cursor: pointer;
