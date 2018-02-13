@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(#dad9d5, white);
+    font-family: Bahnschrift, sans-serif;
+}
+
+#body1{
+    font-family: Bahnschrift, sans-serif;
+}
+
+#navbar {
+    background-color: #1e394c;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+td {
+    font-size: 25px;
+    margin-left: 1px;
+    text-align: center;
+    height: 2vw;
+    font-family: Bahnschrift, sans-serif;
+}
+
+
+#map
+{
+    margin-left: 35%;
+    
+
+}
+
+
+
+
+#home,#cars,#pricelist,#order,#rent,#contact,#luxurycars,#economycars,#pricelist2,#sportcars,#vans
+{   
+    cursor: pointer;
+    filter: brightness(75%);
+    text-align: center;
+     border-bottom: 3px solid  #1e394c;
+    
+
+}
+
+#home:hover,#cars:hover,#pricelist:hover,#order:hover,#rent:hover,#contact:hover,#economycars:hover,#luxurycars:hover,#pricelist2:hover,#sportcars:hover,#vans:hover
+{
+    
+    cursor: pointer;
+    filter: brightness(100%);
+    border-bottom: 3px solid  #89c64a;
+   
+    
+}
+
+
+
+
+
+
+#footer {
+    margin-top: 2vw;
+    height: 3vw;
+    background-color: #1e394c;
+}
