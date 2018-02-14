@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  
+ 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <title>CarRent</title>
@@ -36,7 +37,7 @@
         <table class="table">
     <thead>
       <tr>
-        <td><h1>BRATISLAVA</h1><div id="renttext">Letisko Košice<div>Airport Košice a.s.</div><div>041 75 Košice</div><div>Tel.contact:</div><div>+421 908513000</div></div></td>
+        <td><div id="ba"><h1>BRATISLAVA</h1></div><div id="renttext">Letisko Košice<div>Airport Košice a.s.</div><div>041 75 Košice</div><div>Tel.contact:</div><div>+421 908513000</div></div></td>
         <td><h1>BANSKA BYSTRICA</h1><div id="renttext">Letisko Košice<div>Airport Košice a.s.</div><div>041 75 Košice</div><div>Tel.contact:</div><div>+421 908513000</div></div></td>
         <td><h1>KOSICE</h1><div id="renttext">Letisko Košice<div>Airport Košice a.s.</div><div>041 75 Košice</div><div>Tel.contact:</div><div>+421 908513000</div></div></td>
         <td><h1>WIEN</h1><div id="renttext">Letisko Košice<div>Airport Košice a.s.</div><div>041 75 Košice</div><div>Tel.contact:</div><div>+421 908513000</div></div></td>
@@ -48,7 +49,7 @@
         
     <div class="row"> <!-- thirdBlockLink -->
       <div class="col-md-4">
-      <img src="design/mapa.png"  id="map"></div>
+      <div id="map"></div>
     <div class="col-md-12" id="footer">              
     </div>
     </div> <!-- ROW thirdBlockLink -->
@@ -62,5 +63,8 @@
     </div> <!-- ROW -->
     
     </div><!-- CONTAINER -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsUAkMm91qVrSArgk9gTu2vfGCHB3c0H8&callback=initMap">
+    </script>
 </body>
 </html>
