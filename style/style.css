@@ -1,0 +1,144 @@
+/* font for document */
+@font-face {
+    font-family: Bahnschrift, sans-serif;
+}
+
+body {
+    background: linear-gradient(#dad9d5, white);
+    background-repeat: no-repeat;
+    
+}
+
+/* ROW NAVBAR */
+#navbar {
+    text-align: center;
+    color: white;
+    margin-top: 1.5vh;
+}
+
+/* div logo navbar */
+#divLogoNavbar {
+    padding: 0px;
+    background-color: #1e394c;
+    height: 4vh;
+    margin-top: 1vh;
+    text-align: right;
+}
+
+/* logo navbar */
+#logoNavbar {
+    height: 8vh;
+    margin-top: -2vh;
+}
+
+/* logo navbar:hover */
+#logoNavbar:hover {
+    cursor: pointer;
+    height: 8.1vh;
+}
+
+/* ul */
+ul { 
+    list-style-type: none;
+    padding: 0px auto;
+    text-align: center;
+    align-content: center;
+}
+
+/* background on navbar */
+.backgroundNavbar {
+    background-color: #1e394c;
+    height: 4vh;
+    margin-top: 1vh;
+}
+
+/* pNavbar */
+.pNavbar {    
+    filter: brightness(75%);
+}
+
+/* li */
+li {
+    float: left;
+    text-align: center;
+}
+
+/* li, a */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.4vw 10px;
+    border-bottom: 3px solid #1e394c;
+    height: 4vh;
+}
+
+/* li, a:hover; li, a:active */
+li a:hover, li a:active {
+    cursor: pointer;
+    filter: brightness(100%);
+    border-bottom: 3px solid #8ac64a;
+}
+
+/* pNavbar:hover, pNavbar:active */
+.pNavbar:hover, .pNavbar:active {    
+    filter: brightness(100%);
+}
+
+#firstBlockLink, #thirdBlockLink {
+    text-align: right;
+    filter: brightness(75%);
+}
+
+#firstBlockLink:hover, #thirdBlockLink:hover {
+    filter: brightness(100%);
+}
+
+#secondBlockLink {
+    filter: brightness(75%);
+}
+
+#secondBlockLink:hover {
+    filter: brightness(100%);
+}
+
+
+#firstBlockLinkImg, #secondBlockLinkImg, #thirdBlockLinkImg {
+    width: 100%;
+    object-fit: contain;
+}
+
+#firstBlockLinkImg:hover, #secondBlockLinkImg:hover, #thirdBlockLinkImg:hover {
+    cursor: pointer;
+}
+
+#fisrtBlockLinkText, #secondBlockLinkText, #thirdBlockLinkText {
+    font-size: 3vw;
+    color: #89c64a;
+    text-align: center;
+    letter-spacing: 1vh;
+    position: absolute;    
+    cursor: pointer;
+}
+
+#fisrtBlockLinkText {    
+    top: 4.5vh;
+    right: 9.5vh;
+}
+
+#secondBlockLinkText {
+    top: 4.5vh;
+    left: 10.5vh;
+}
+
+#thirdBlockLinkText {
+    top: 6.5vh;
+    right: 10.5vh;
+}
+
+/* footer */
+#footer {
+    margin-top: 2vw;
+    height: 3vw;
+    background-color: #1e394c;
+}

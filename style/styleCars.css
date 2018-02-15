@@ -1,0 +1,115 @@
+/* navbar2 */
+#navbar2 {
+    margin-top: 2vh;
+}
+
+/* divNavbar2*/
+#divNavbar2 {
+    margin: 0px auto;
+}
+
+/* navcars */
+.navcars {
+    color: #1e394c;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 3px solid #deddd9;
+}
+
+/* field */
+.field {
+    margin-top: 1vh;
+}
+
+/* bgcolorcar */
+.bgcolorcar {
+    background-color: #acb0b9;
+}
+
+/* width */
+.width{
+    width: 100%;
+    margin: 4vw auto;
+}
+
+/* bgcolor */
+.bgcolor {
+   background-color: #8e9ca5;
+}
+
+/* carName */
+#carName{
+    text-align: left;
+    font-size: 1.5vw;
+    color: #1e394c;
+    font-weight: bold;
+    margin-top: 0.5vw;
+}
+
+/* basicInfo */
+.basicInfo {
+    font-size: 1.5vw;
+    color: white;
+}
+
+/* imgdecoration */
+.imgdecoration{
+    width: 1.5vw;
+}
+
+/* moreInfo */
+.moreInfo {
+    padding: 0vw 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+/* textdecoration */
+.textdecoration {
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+    color: white;
+    text-align: left;
+}
+
+/* price */
+.price {
+    text-align: right;
+}
+
+/* realprice */
+.realprice{
+    font-size: 1.5vw;
+    font-weight: bold;
+    float: right;
+}
+
+/* blue */
+.blue {
+    color: #1e394c;
+    margin-right: 0.5vw;
+}
+
+/* green */
+.green {
+    color: #8ac64a; 
+    margin-right: 0.5vw;
+}
+
+/* panels */
+.panels{
+    text-align: center;
+}
+
+/* imgsize */
+.imgsize{
+    width: 25%;
+    cursor: pointer;
+}
+
+/* sizepricelist */
+.sizepricelist{
+    width: 50%;
+    cursor: pointer;
+}

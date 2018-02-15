@@ -1,188 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleCars.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <title>CarRent</title>
 </head>
-<body id="body1">
-    <div class="container">
     
-    <div class="row" id="navbar"> <!-- navbar -->
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <table class="table">
-    <thead>
-      <tr>
-        <th><div id="home" onclick="window.location.href='index.html'">HOME</div></th>
-        <th><div id="cars" onclick="window.location.href='cars.html'">CARS</div></th>
-        <th><div id="pricelist">PRICE LIST</div></th>
-        <th><div id="order">ORDER</div></th>
-        <th><div id="rent" onclick="window.location.href='rent.html'">RENT</div></th>
-        <th><div id="contact">CONTACT</div></th>
-      </tr>
-    </thead>
-  </table>
-    </div>
-    <div class="col-md-3"></div>
-    </div> <!-- ROW navbar -->     
-</div>
+<body id="body1">
+    <div class="container"> <!-- container -->
+        
+        <div class="row" id="navbar"> <!-- navbar -->
+        <div class="col-md-2" id="divLogoNavbar"> <!-- div logo navbar -->
+            <img src="img/pageIndex/car_rent_logo.png" id="logoNavbar"> <!-- logo navbar --> 
+        </div>
+        <div class="col-md-9 backgroundNavbar"> <!-- ul, background on navbar -->
+            <ul> 
+                <li><a onclick="window.location.href='index.html'"><p class="pNavbar">HOME</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='cars.html'"><p class="pNavbar">CARS</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='price_list.html'"><p class="pNavbar">PRICE LIST</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='order.html'"><p class="pNavbar">ORDER</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='rent.html'"><p class="pNavbar">RENT</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='contact.html'"><p class="pNavbar">CONTACT</p></a></li> <!-- li, a, pNavbar  -->
+            </ul>
+        </div> <!-- ul, background on navbar -->
+        <div class="col-md-1 backgroundNavbar"></div> <!-- background on navbar -->
+    </div> <!-- ROW navbar -->      
+    
 
-	 <div class="row" id="navbar2"> <!-- navbar2 -->
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <table class="table">
-    <thead>
-      <tr>
-        <td><div class="navcars"   onclick="window.location.href='#'">ECONOMY CARS</div></td>
-        <td><div class="navcars"   onclick="window.location.href='#'">LUXURY CARS</div></td>
-        <td><div class="navcars"   onclick="window.location.href='#'">PRICE LIST</div></td>
-        <td><div class="navcars"   onclick="window.location.href='#'">SPORT CARS</div></td>
-        <td><div class="navcars"   onclick="window.location.href='#'">VANS</div></td>
-      </tr>
-    </thead>
-  </table>
-    </div>
-    <div class="col-md-3"></div>
+    <div class="row" id="navbar2"> <!-- navbar2 -->
+        <div class="col-md-16" id="divNavbar2"> <!-- divNavbar2 -->
+            <ul>
+                <li><a class="navcars" onclick="window.location.href='#'">ECONOMY CARS</a></li> <!-- navcars -->
+                <li><a class="navcars" onclick="window.location.href='#'">LUXURY CARS</a></li> <!-- navcars -->
+                <li><a class="navcars" onclick="window.location.href='#'">SPORT CARS</a></li> <!-- navcars -->
+                <li><a class="navcars" onclick="window.location.href='#'">VANS</a></li> <!-- navcars -->
+            </ul>
+        </div> <!-- divNavbar2 -->
     </div> <!-- ROW navbar2 -->     
-</div>
+
  
  <!-- content -->
- <div class="container">
-  <div class="row">
-    <div class="col bgcolorcar">
-      <img src="design/aventador.png" class="width">
-    </div>
-    <div class="col bgcolor">
-      <div id="car">Lamborghini Aventador</div>
-      <div class="textdecoration"><img src="design/symbol_power.png" class="imgdecoration"> 700 PS</div>
-      <div class="textdecoration"><img src="design/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div>
-      <div class="textdecoration"><img src="design/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div>
-    </div>
-    <div class="col-8 bgcolor">
-     <div class="textdecoration">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
-    <div id="dec" class="realprice">1899 €/per day</div>
-    <div class="panels"><img src="design/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="design/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="design/order.png" class="imgsize" onclick="window.location.href='suka.html'"></div>
-    </div>
-  </div>
-</div>
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
+        
+  <div class="row field"> <!-- field -->
+    <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
+      <img src="img/pageCars/aventador.png" class="width"> <!-- width -->
+    </div> <!-- bgcolorcar -->
+    <div class="col-md-9 bgcolor"> <!-- bgcolor -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="carName">Lamborghini Aventador</div> <!-- carName -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_power.png" class="imgdecoration"> 700 PS</div> <!-- basInfo, imgdecoration -->
+                <div class="basicInfo"><img src="img/pageCars/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div> <!-- basInfo, imgdecoration -->
+                <div class=" basicInfo"><img src="img/pageCars/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div> <!-- basInfo, imgdecoration -->
+            </div>
+            <div class="col-md-9">
+                <div class="row moreInfo"> <!-- moreInfo -->
+                <div class="col-md-12 textdecoration"> <!-- textdecoration -->
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div> <!-- textdecoration -->
+            <div class="col-md-12 price"><p class="realprice blue">/per day</p><p class="realprice green">1899 €</p></div> <!-- price, realprice, blue, green -->
+            <div class="col-md-12 panels"> <!-- panels -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='suka.html'"> <!-- imgsize, sizepricelist  -->
+                    </div>
+                </div>
+                </div> <!-- panels -->
+            </div> <!-- moreInfo -->
+            </div>        
+        </div>      
+    </div> <!-- bgcolor -->
+  </div> <!-- field -->
 
-<div class="container">
-  <div class="row">
-    <div class="col mb-3">
      
-    </div>
-    <div class="col mb-3">
-      
-    </div>
-    <div class="col-8 mb-3">
-     
-    </div>
-  </div>
-</div>
-
- <div class="container">
-  <div class="row">
-    <div class="col bgcolorcar">
-      <img src="design/mustang.png" class="width">
-    </div>
-    <div class="col bgcolor">
-      <div id="car">Lamborghini Aventador</div>
-      <div class="textdecoration"><img src="design/symbol_power.png" class="imgdecoration"> 700 PS</div>
-      <div class="textdecoration"><img src="design/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div>
-      <div class="textdecoration"><img src="design/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div>
-    </div>
-    <div class="col-8 bgcolor">
-     <div class="textdecoration">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
-    <div class="realprice">1899 €/per day</div>
-    <div class="panels"><img src="design/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="design/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="design/order.png" class="imgsize" onclick="window.location.href='suka.html'"></div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col mb-3">
-     
-    </div>
-    <div class="col mb-3">
-      
-    </div>
-    <div class="col-8 mb-3">
-     
-    </div>
-  </div>
-</div>
-
- <div class="container">
-  <div class="row">
-    <div class="col bgcolorcar">
-      <img src="design/aventador.png" class="width">
-    </div>
-    <div class="col bgcolor">
-      <div id="car">Lamborghini Aventador</div>
-      <div class="textdecoration"><img src="design/symbol_power.png" class="imgdecoration"> 700 PS</div>
-      <div class="textdecoration"><img src="design/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div>
-      <div class="textdecoration"><img src="design/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div>
-    </div>
-    <div class="col-8 bgcolor">
-     <div class="textdecoration">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
-    <div class="realprice">1899 €/per day</div>
-    <div class="panels"><img src="design/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="design/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="design/order.png" class="imgsize" onclick="window.location.href='suka.html'"></div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col mb-3">
-    </div>
-    <div class="col mb-3">
-    </div>
-    <div class="col-8 mb-3">
-    </div>
-  </div>
-</div>
-		
- <div class="container">
-  <div class="row">
-    <div class="col bgcolorcar">
-      <img src="design/mustang.png" class="width">
-    </div>
-    <div class="col bgcolor">
-      <div id="car">Lamborghini Aventador</div>
-      <div class="textdecoration"><img src="design/symbol_power.png" class="imgdecoration"> 700 PS</div>
-      <div class="textdecoration"><img src="design/symbol_max_speed.png" class="imgdecoration"> 350 km/h</div>
-      <div class="textdecoration"><img src="design/acceleration_symbol.png" class="imgdecoration"> 2.9 s</div>
-    </div>
-    <div class="col-8 bgcolor">
-     <div class="textdecoration">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
-    <div class="realprice">1899 €/per day</div>
-    <div class="panels"><img src="design/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="design/price_list.png" class="sizepricelist" onclick="window.location.href='suka.html'"><img src="design/order.png" class="imgsize" onclick="window.location.href='suka.html'"></div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-    </div>
-    <div class="col-12" id="footer">
-
-    </div>
-    <div class="col">
-    </div>
-  </div>
-</div>
-
-<!-- End of content -->
-
+<div class="row"> <!-- footer -->
+        <div class="col-md-12" id="footer"></div>
+    </div> <!-- ROW footer -->
+        
+</div> <!-- container -->
+        
 </body>
 </html>

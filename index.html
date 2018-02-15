@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <title>CarRent</title>
 </head>
+    
 <body id="body">
-    <div class="container">
+    <div class="container"> <!-- container -->
     
     <div class="row" id="navbar"> <!-- navbar -->
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <table class="table">
-    <thead>
-      <tr>
-        <th><div id="home" onclick="window.location.href='index.html'" >HOME</div></th>
-        <th><div id="cars"onclick="window.location.href='cars.html'">CARS</div></th>
-        <th><div id="pricelist">PRICE LIST</div></th>
-        <th><div id="order">ORDER</div></th>
-        <th><div id="rent" onclick="window.location.href='rent.html'">RENT</div></th>
-        <th><div id="contact">CONTACT</div></th>
-      </tr>
-    </thead>
-  </table>
-    </div>
-    <div class="col-md-3"></div>
-    </div> <!-- ROW navbar -->     
+        <div class="col-md-2" id="divLogoNavbar"> <!-- div logo navbar -->
+            <img src="img/pageIndex/car_rent_logo.png" id="logoNavbar"> <!-- logo navbar --> 
+        </div>
+        <div class="col-md-10 backgroundNavbar"> <!-- ul, background on navbar -->
+            <ul> 
+                <li><a onclick="window.location.href='index.html'"><p class="pNavbar">HOME</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='cars.html'"><p class="pNavbar">CARS</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='price_list.html'"><p class="pNavbar">PRICE LIST</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='order.html'"><p class="pNavbar">ORDER</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='rent.html'"><p class="pNavbar">RENT</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='contact.html'"><p class="pNavbar">CONTACT</p></a></li> <!-- li, a, pNavbar  -->
+            </ul>
+        </div> <!-- ul, background on navbar -->
+        
+    </div> <!-- ROW navbar -->    
         
     <div class="row" id="slideShow"> <!-- slideshow -->
     <div class="col-md-12">
@@ -54,21 +53,21 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="design/Mustang.png">
+      <img src="img/pageIndex/slideshow/Mustang.png">
        <div class="carousel-caption">
         <h3>FORD MUSTANG V6 5.0</h3>
         
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="design/audi.jpg">
+      <img src="img/pageIndex/slideshow/audi.jpg">
        <div class="carousel-caption">
         <h3>AUDI A8</h3>
         
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="design/x6.jpg">
+      <img src="img/pageIndex/slideshow/x6.jpg">
        <div class="carousel-caption">
         <h3>BMW X6</h3>
        
@@ -76,7 +75,7 @@
   </div>
 
     <div class="carousel-item">
-      <img src="design/amg.jpg">
+      <img src="img/pageIndex/slideshow/amg.jpg">
        <div class="carousel-caption">
         <h3>Mercedes-AMG Roadster  GT S</h3>
        
@@ -84,7 +83,7 @@
   </div>
 
     <div class="carousel-item">
-      <img src="design/bentley.jpg">
+      <img src="img/pageIndex/slideshow/bentley.jpg">
        <div class="carousel-caption">
         <h3>BENTLEY MULSANNE</h3>
        
@@ -92,7 +91,7 @@
   </div>
 
   <div class="carousel-item">
-      <img src="design/bugatti.jpg">
+      <img src="img/pageIndex/slideshow/bugatti.jpg">
        <div class="carousel-caption">
         <h3>BUGATTI CHIRON</h3>
         
@@ -100,7 +99,7 @@
   </div>
 
     <div class="carousel-item">
-      <img src="design/camaro.jpg">
+      <img src="img/pageIndex/slideshow/camaro.jpg">
        <div class="carousel-caption">
         <h3>CHEVROLET CAMARO</h3>
        
@@ -108,7 +107,7 @@
   </div>
 
     <div class="carousel-item">
-      <img src="design/mc720s.jpg">
+      <img src="img/pageIndex/slideshow/mc720s.jpg">
        <div class="carousel-caption">
         <h3>MCLAREN 720 S</h3>
         
@@ -116,7 +115,7 @@
   </div>
 
     <div class="carousel-item">
-      <img src="design/rr.jpg">
+      <img src="img/pageIndex/slideshow/rr.jpg">
        <div class="carousel-caption">
         <h3>ROLLS-ROYCE WRAITH</h3>
         
@@ -139,40 +138,33 @@
     </div>
     </div> <!-- ROW slideshow -->
     
-    <div id="blocks">
-    <div class="row" id="firstBlockLink"> <!-- firstBlockLink -->
-    <div class="col-md-12">
-        <p id="fisrtBlockLinkText">CHOOSE<br> YOUR <br> CAR</p>
-        <img src="design/firstBlockLinkImg.png" id="firstBlockLinkImg">       
-    </div>
-    </div> <!-- ROW firstBlockLink -->
+    <div> <!-- blocks -->
+        <div class="row" id="firstBlockLink"> <!-- firstBlockLink -->
+            <div class="col-md-12">
+                <p id="fisrtBlockLinkText">CHOOSE<br> YOUR <br> CAR</p>
+                <img src="img/pageIndex/firstBlockLinkImg.png" id="firstBlockLinkImg">       
+            </div>
+        </div> <!-- ROW firstBlockLink -->
         
-    <div class="row" id="secondBlockLink"> <!-- secondBlockLink -->
-    <div class="col-md-12">
-        <p id="secondBlockLinkText">CHECK<br> THE <br> PRICE</p>
-        <img src="design/secondBlockLinkImg.png" id="firstBlockLinkImg">       
-    </div>
-    </div> <!-- ROW secondBlockLink -->
+        <div class="row" id="secondBlockLink"> <!-- secondBlockLink -->
+            <div class="col-md-12">
+                <p id="secondBlockLinkText">CHECK<br> THE <br> PRICE</p>
+                <img src="img/pageIndex/secondBlockLinkImg.png" id="firstBlockLinkImg">       
+            </div>
+        </div> <!-- ROW secondBlockLink -->
         
-    <div class="row" id="thirdBlockLink"> <!-- thirdBlockLink -->
-    <div class="col-md-12">
-        <p id="thirdBlockLinkText">MAKE<br>ORDER</p>
-        <img src="design/thirdBlockLinkImg.png" id="firstBlockLinkImg">       
-    </div>
-    </div> <!-- ROW thirdBlockLink -->
+        <div class="row" id="thirdBlockLink"> <!-- thirdBlockLink -->
+            <div class="col-md-12">
+                <p id="thirdBlockLinkText">MAKE<br>ORDER</p>
+                <img src="img/pageIndex/thirdBlockLinkImg.png" id="firstBlockLinkImg">       
+            </div>
+        </div> <!-- ROW thirdBlockLink -->
+    </div> <!-- blocks -->
         
-    <div class="row"> <!-- thirdBlockLink -->
-    <div class="col-md-12" id="footer">              
-    </div>
-    </div> <!-- ROW thirdBlockLink -->
-    </div>
-        
-    <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-    </div> <!-- ROW -->
+    <div class="row"> <!-- footer -->
+        <div class="col-md-12" id="footer"></div>
+    </div> <!-- ROW footer -->
     
-    </div><!-- CONTAINER -->
+    </div><!-- container -->
 </body>
 </html>

@@ -1,0 +1,37 @@
+#headOrderForm {
+    color: #1e394c;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+
+#rowOrderForm {
+    margin-top: 2vw;
+    background-color: white;
+    box-shadow: 0.1vw 0.1vw 1vw grey;
+}
+
+.pOrderForm {
+    color: #1e394c;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+select, input {
+    border: none;
+    border-bottom: 2px solid #1e394c;
+    height: 5vh;
+    width: 80%;
+}
+
+#inputDate {
+    width: 80%;
+}
+
+#inputTime {
+    width: 100%;
+}
+
+.carousel-inner img {
+   height: 70vh;
+}
