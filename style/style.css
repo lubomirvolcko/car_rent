@@ -136,6 +136,10 @@ li a:hover, li a:active {
     right: 10.5vh;
 }
 
+.carousel-inner img {
+   height: 70vh;
+}
+
 /* footer */
 #footer {
     margin-top: 2vw;
