@@ -36,70 +36,97 @@
     
     <div class="row">
     <div class="col-md-12">
-        <p id="headOrderForm">ORDER FORM</p>
-        <div class="row" id="rowOrderForm">
-            <div class="col-md-6">
-                
-                <p class="pOrderForm">Category:</p>
-                <select>
+        <p id="headOrderForm">ORDER FORM</p> <!-- headOrderForm -->
+        
+        <div class="row" id="rowOrderForm"> <!-- rowOrderForm -->
+            
+            <div class="col-md-6" id="Form"> <!-- Form -->
+                            
+                <p class="pOrderForm noMarginTop">Category:<b class="star"> *</b></p> <!-- noMarginTop, star -->
+                <select required>
+                    <option selected="true" disabled="disabled">Choose category</option>
                     <option>Luxury</option>
                     <option>Sports</option>
                     <option>Economy</option>
                     <option>Vans</option>
                 </select>
                 
-                <p class="pOrderForm">Car:</p>
-                <select>
+                <p class="pOrderForm">Car:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <select required>
+                    <option selected="true" disabled="disabled">Choose car</option>
                     <option>Audi A8</option>
                     <option>Ford Mustang</option>
                     <option>Lamborghini Aventador</option>
                     <option>Ford Transit</option>
                 </select>
                 
-                <p class="pOrderForm">Pick-up date:</p>
+                <p class="pOrderForm">Pick-up date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <input type="date" id="inputDate">
-                    </div>
-                    <div class="col-md-2">
                         <input type="time" id="inputTime">
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
                 
-                <p class="pOrderForm">Delivery date:</p>
+                <p class="pOrderForm">Delivery date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12 ">
                         <input type="date" id="inputDate">
-                    </div>
-                    <div class="col-md-2">
                         <input type="time" id="inputTime">
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
                 
-                <p class="pOrderForm">Pick-up place:</p>
-                <select>
+                <p class="pOrderForm">Pick-up place:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <select required>
+                    <option selected="true" disabled="disabled">Choose city</option>
                     <option>Wien</option>
                     <option>Bratislava</option>
                     <option>Zilina</option>
                     <option>Kosice</option>
                 </select>
                 
-                <p class="pOrderForm">Delivery place:</p>
-                <select>
+                <p class="pOrderForm">Delivery place:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <select required>
+                    <option selected="true" disabled="disabled">Choose city</option>
                     <option>Wien</option>
                     <option>Bratislava</option>
                     <option>Zilina</option>
                     <option>Kosice</option>
                 </select>
-            </div>
-            <div class="col-md-6">
                 
-                
+            </div> <!-- Form -->
             
-            </div>
-        </div>
+            <div class="col-md-6" id="Form"> <!-- Form -->
+                
+                <p class="pOrderForm noMarginTop">First name/Company name:<b class="star"> *</b></p> <!-- pOrderForm, noMarginTop -->
+                <input type="text" placeholder="First name/Company name" required>
+                
+                <p class="pOrderForm">Last name/Company id:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <input type="text" placeholder="Last name/Company id:" required>
+                
+                <p class="pOrderForm">E-mail:<b class="star">*</b></p> <!-- pOrderForm, star -->
+                <input type="email" placeholder="E-mail" required>
+                
+                <p class="pOrderForm">Contact number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <input type="text" placeholder="Contact number" required>
+                
+                <p class="pOrderForm">ID card number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <input type="text" placeholder="ID card number" required>
+                
+                <p class="pOrderForm">Notes:</p> <!-- pOrderForm -->
+                <input type="text" placeholder="Notes" required>
+                
+                <p id="legend"><b class="star">*</b>required fields</p> <!-- legend -->
+                
+            </div> <!-- Form -->
+            
+                <div class="col-md-12" id="buttomForm"> <!-- buttomForm -->
+                    <p id="textPrice">Total price:</p> <!-- textPrice -->
+                    <div id="price">1890 €</div> <!-- price -->
+                    <input type="submit" id="button" value="CONFIRM"> <!-- button -->
+                </div> <!-- buttomForm -->
+            
+        </div> <!-- rowOrderForm -->
     </div>
     </div> <!-- ROW -->
         

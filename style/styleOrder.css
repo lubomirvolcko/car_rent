@@ -1,37 +1,107 @@
+/* headOrderForm */
 #headOrderForm {
     color: #1e394c;
     text-align: center;
     font-size: 2vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
+/* rowOrderForm */
 #rowOrderForm {
-    margin-top: 2vw;
+    margin-top: 1vw;
     background-color: white;
     box-shadow: 0.1vw 0.1vw 1vw grey;
 }
 
+/* pOrderForm */
 .pOrderForm {
     color: #1e394c;
-    font-size: 1.5vw;
-    margin-top: 1vw;
+    font-size: 1.3vw;
+    margin-bottom: 0px;
+    margin-top: 2%;
+    font-weight: 600;
 }
 
+/* noMarginTop */
+.noMarginTop {
+    margin-top: 0px;
+}
+
+/* star */
+.star {
+    color: #89c64a;
+    font-weight: 600;
+}
+
+/* select, input */
 select, input {
+    color: #1e394c;
+    font-size: 1.3vw;
+    margin-top: 0px;
     border: none;
-    border-bottom: 2px solid #1e394c;
-    height: 5vh;
-    width: 80%;
-}
-
-#inputDate {
-    width: 80%;
-}
-
-#inputTime {
+    border-bottom: 2px solid #89c64a;
+    height: 3.5vh;
     width: 100%;
 }
 
-.carousel-inner img {
-   height: 70vh;
+/* inputDate */
+#inputDate {
+    width: 70%;
+    float: left;
+}
+
+/* inputTime */
+#inputTime {
+    margin-left: 5%;
+    width: 25%;
+}
+
+/* Form */
+#Form {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* buttomForm */
+#buttomForm {
+    text-align: center;
+    font-weight: bold;
+    color: #1e394c;
+    font-size: 2vw;
+}
+
+/* textPrice */
+#textPrice {
+    margin-bottom: 0px;
+}
+
+/* price */
+#price {
+    color: #89c64a;
+    font-size: 2.5vw;
+}
+
+/* button */
+#button {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 3%;
+    width: 12vw;
+    height: 3vw;
+    background-color: #89c64a;
+}
+
+/* button:hover */
+#button:hover {
+    cursor: pointer;
+    background-color: #9fd763;
+}
+
+/* legend */
+#legend {
+    margin-top: 1vw;
+    font-size: 1vw;
 }
