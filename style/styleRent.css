@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Bahnschrift, sans-serif;
+}
+
+.titlecontent{
+	text-align: center;
+	color: #6B8E23;
+	margin-bottom: 0px;
+	font-size: 1vw;
+}
+
+.content{
+	margin-top: -2%;
+	margin-bottom: 3%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.size{
+	margin-top: 2.5%;
+}
+
+.condition1 {
+    text-align: center;
+}
