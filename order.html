@@ -43,21 +43,18 @@
             <div class="col-md-6" id="Form"> <!-- Form -->
                             
                 <p class="pOrderForm noMarginTop">Category:<b class="star"> *</b></p> <!-- noMarginTop, star -->
-                <select required>
+                <select required  id="cat">
                     <option selected="true" disabled="disabled">Choose category</option>
                     <option>Luxury</option>
-                    <option>Sports</option>
+                    <option>Sport</option>
                     <option>Economy</option>
                     <option>Vans</option>
                 </select>
                 
                 <p class="pOrderForm">Car:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <select required>
-                    <option selected="true" disabled="disabled">Choose car</option>
-                    <option>Audi A8</option>
-                    <option>Ford Mustang</option>
-                    <option>Lamborghini Aventador</option>
-                    <option>Ford Transit</option>
+                <select required id="dbcar">
+                    <option selected="true" disabled="disabled" >Choose car</option>
+                 
                 </select>
                 
                 <p class="pOrderForm">Pick-up date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
@@ -77,7 +74,7 @@
                 </div>
                 
                 <p class="pOrderForm">Pick-up place:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <select required>
+                <select required id="pickup">
                     <option selected="true" disabled="disabled">Choose city</option>
                     <option>Wien</option>
                     <option>Bratislava</option>
@@ -86,7 +83,7 @@
                 </select>
                 
                 <p class="pOrderForm">Delivery place:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <select required>
+                <select required id="deliver">
                     <option selected="true" disabled="disabled">Choose city</option>
                     <option>Wien</option>
                     <option>Bratislava</option>
@@ -99,7 +96,7 @@
             <div class="col-md-6" id="Form"> <!-- Form -->
                 
                 <p class="pOrderForm noMarginTop">First name/Company name:<b class="star"> *</b></p> <!-- pOrderForm, noMarginTop -->
-                <input type="text" placeholder="First name/Company name" required>
+                <input type="text" id="fname" placeholder="First name/Company name" required>
                 
                 <p class="pOrderForm">Last name/Company id:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <input type="text" placeholder="Last name/Company id:" required>
