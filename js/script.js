@@ -1,6 +1,22 @@
  $(document).ready(function() {
  	var ba=$("#ba").val();
+var today= new Date();
+var time = today.getHours() + ":" + today.getMinutes()  
+var day = ("0" + today.getDate()).slice(-2);
+var month = ("0" + (today.getMonth() + 1)).slice(-2);
+var today = today.getFullYear()+"-"+(month)+"-"+(day) ;
+var today2 = new Date();
+var day2 = ("0" + today2.getDate()).slice(-2);
+var month2 = ("0" + (today2.getMonth() + 1)).slice(-2);
+var today2=today2.getFullYear()+1+"-"+(month2)+"-"+(day2) ;
 
+$("#inputDate").attr("min",today);
+$("#inputDate").attr("value",today);
+$("#inputDelDate").attr("min",today);
+$("#inputDelDate").attr("max",today2);
+
+
+    
  $("#ba").click(function(){
 var city = "Bratislava";
 var urllink='http://api.openweathermap.org/data/2.5/weather?q=';
@@ -119,82 +135,52 @@ console.log(urllink);
       
 }
 
+}); //vybratie áut podľa kategórie 
+
+
+   $("#button").click(function(){  
+
+   var choosenCar =  $("#dbcar").val();
+   var pickplace=$("#pickup").val();
+   var deliverplace=$("#deliver").val();
+   var firstname = $("#fname").val();
+   var lastname = $("#lname").val();
+   var email = $("#email").val();
+    var number = $("#number").val();
+    var idcardnumber = $("#idcardnumber").val();
+    var pickdate =$("#inputDate").val();
+    var picktime = $("#inputTime").val();
+    var deliverdate = $("#inputDelDate").val();
+    var delivertime = $("#inputDelTime").val();
+
+
+
+
+    $.ajax({
+        url : "http://localhost:8080/information/new",
+
+        type: "POST",
+        data: JSON.stringify({"choosenCar": choosenCar,"pickplace": pickplace,
+        "deliverplace":deliverplace,"firstname":firstname,"lastname":lastname,
+        "email":email,"number":number,"idcardnumber":idcardnumber,"pickdate":pickdate,"picktime":picktime,
+        "deliverdate":deliverdate,"delivertime":delivertime}),
+        contentType: "application/json; charset=utf-8",
+        dataType   : 'json',
+
+   
+        success : console.log("Success write")
+    });
+
+
+
+
+
+
+
 });
 
-   
-
- $("#pickup").change(function(){
-
-  $.ajax({
-
-    url: 'http://localhost:8080/rent/city/'+$(this).val(),
      
-    data:null,
-    contentType:'application/json',
-    crossDomain: true,
-    dataType: 'jsonp',
-    
-    jsonpCallback:'getCity',
-    contentType:'application/json',
-    success: getCity,
-    type:'GET'
-   
-
-
-
-
-        
-     }); 
-
-
  
- function getCity(data)
-{    console.log(data);
-    
-    
-     
-    
-      
-}
-
-   }); 
-
-
-$("#deliver").change(function(){
-
-  $.ajax({
-
-    url: 'http://localhost:8080/rent/decity/'+$(this).val(),
-     
-    data:null,
-    contentType:'application/json',
-    crossDomain: true,
-    dataType: 'jsonp',
-    
-    jsonpCallback:'getCity',
-    contentType:'application/json',
-    success: getCity,
-    type:'GET'
-   
-
-
-
-
-        
-     }); 
-
-
- 
- function getDeCity(data)
-{    console.log(data);
-    
-    
-     
-    
-      
-}
-
-   }); 
 
 
 
@@ -218,3 +204,4 @@ $("#deliver").change(function(){
 
 
 });
+ 

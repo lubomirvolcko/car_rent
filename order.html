@@ -60,16 +60,16 @@
                 <p class="pOrderForm">Pick-up date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="date" id="inputDate">
-                        <input type="time" id="inputTime">
+                        <input type="date" id="inputDate" onkeydown="return false" >
+                        <input type="time" id="inputTime" min="10:00" max="20:00" onkeydown="return false" >
                     </div>
                 </div>
                 
                 <p class="pOrderForm">Delivery date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <div class="row">
                     <div class="col-md-12 ">
-                        <input type="date" id="inputDate">
-                        <input type="time" id="inputTime">
+                        <input type="date" id="inputDelDate" onkeydown="return false">
+                        <input type="time" id="inputDelTime" onkeydown="return false" min="10:00" max="20:00">
                     </div>
                 </div>
                 
@@ -96,19 +96,19 @@
             <div class="col-md-6" id="Form"> <!-- Form -->
                 
                 <p class="pOrderForm noMarginTop">First name/Company name:<b class="star"> *</b></p> <!-- pOrderForm, noMarginTop -->
-                <input type="text" id="fname" placeholder="First name/Company name" required>
+                <input type="text"  id="fname" placeholder="First name/Company name" required>
                 
                 <p class="pOrderForm">Last name/Company id:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <input type="text" placeholder="Last name/Company id:" required>
+                <input type="text" id="lname" placeholder="Last name/Company id:" required>
                 
                 <p class="pOrderForm">E-mail:<b class="star">*</b></p> <!-- pOrderForm, star -->
-                <input type="email" placeholder="E-mail" required>
+                <input type="email" id="email" placeholder="E-mail" required>
                 
                 <p class="pOrderForm">Contact number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <input type="text" placeholder="Contact number" required>
+                <input type="text" id="number" placeholder="Contact number" required>
                 
                 <p class="pOrderForm">ID card number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <input type="text" placeholder="ID card number" required>
+                <input type="text" id="idcardnumber" placeholder="ID card number" required>
                 
                 <p class="pOrderForm">Notes:</p> <!-- pOrderForm -->
                 <input type="text" placeholder="Notes" required>

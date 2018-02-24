@@ -45,13 +45,13 @@ select, input {
 }
 
 /* inputDate */
-#inputDate {
+#inputDate,#inputDelDate {
     width: 70%;
     float: left;
 }
 
 /* inputTime */
-#inputTime {
+#inputTime,#inputDelTime {
     margin-left: 5%;
     width: 25%;
 }
