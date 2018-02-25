@@ -146,3 +146,16 @@ li a:hover, li a:active {
     height: 3vw;
     background-color: #1e394c;
 }
+
+/* Pictures */
+.CarsSlideShow 
+{
+    height: 85%;
+    
+}
+/* Car names */
+.carsName
+{
+    color: #89c64a;
+        font-family: Bahnschrift, sans-serif;
+}
