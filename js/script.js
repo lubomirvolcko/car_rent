@@ -1,5 +1,6 @@
  $(document).ready(function() {
- 	var ba=$("#ba").val();
+ var ba=$("#ba").val();
+ //TIME AND DATE
 var today= new Date();
 var time = today.getHours() + ":" + today.getMinutes()  
 var day = ("0" + today.getDate()).slice(-2);
@@ -15,7 +16,7 @@ $("#inputDate").attr("value",today);
 $("#inputDelDate").attr("min",today);
 $("#inputDelDate").attr("max",today2);
 
-
+//SHOW MAP 
     
  $("#ba").click(function(){
 var city = "Bratislava";
@@ -94,7 +95,7 @@ console.log(urllink);
            
          });
     
-//READ DATA FROM DATABASE-----------------------------------------------------------------------------------
+// GET CARS FROM DATABASE BY CATEGORY
 
     $("#cat").change(function(){
       
@@ -135,73 +136,72 @@ console.log(urllink);
       
 }
 
-}); //vybratie áut podľa kategórie 
+}); 
 
-
-   $("#button").click(function(){  
-
-   var choosenCar =  $("#dbcar").val();
-   var pickplace=$("#pickup").val();
-   var deliverplace=$("#deliver").val();
-   var firstname = $("#fname").val();
-   var lastname = $("#lname").val();
-   var email = $("#email").val();
-    var number = $("#number").val();
-    var idcardnumber = $("#idcardnumber").val();
-    var pickdate =$("#inputDate").val();
-    var picktime = $("#inputTime").val();
-    var deliverdate = $("#inputDelDate").val();
-    var delivertime = $("#inputDelTime").val();
+//GET VALUES FROM INPUTS AND SEND IT TO DATABASE
 
 
 
 
-    $.ajax({
+
+  var enabled = "enabled";
+  var disabled = "disabled";
+  
+
+
+   $("#button").click(function(){ 
+
+  var choosenCar = $("#dbcar").val();
+  var pickplace=$("#pickup").val();
+  var deliverplace=$("#deliver").val();
+  var firstname = $("#fname").val();
+  var lastname = $("#lname").val();
+  var email = $("#email").val();
+  var number = $("#number").val();
+  var idcardnumber = $("#idcardnumber").val();
+  var pickdate =$("#inputDate").val();
+  var picktime = $("#inputTime").val();
+  var deliverdate = $("#inputDelDate").val();
+  var delivertime = $("#inputDelTime").val();
+  var notes = $("#notes").val();
+ //REGEX
+var firstnameregex = /^[A-Z]{1,1}[a-z]{1,15}$/;
+var lastnameregex= /^[A-Z]{1,1}[a-z]{1,15}$/;
+var emailregex=  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var numberregex = /^[+][4][2][1][9][0-9]{8}$/;
+var idcardregex = /^[E][A-Z][0-9]{6}$/;
+if(firstname.match(firstnameregex)==null||lastname.match(lastnameregex)==null||number.match(numberregex)==null||idcardnumber.match(idcardregex)==null||email.match(emailregex)==null)
+alert("Something Wrong");
+else{
+ajax();}
+
+
+
+  
+
+
+function ajax(){
+$.ajax({
         url : "http://localhost:8080/information/new",
 
         type: "POST",
         data: JSON.stringify({"choosenCar": choosenCar,"pickplace": pickplace,
         "deliverplace":deliverplace,"firstname":firstname,"lastname":lastname,
         "email":email,"number":number,"idcardnumber":idcardnumber,"pickdate":pickdate,"picktime":picktime,
-        "deliverdate":deliverdate,"delivertime":delivertime}),
+        "deliverdate":deliverdate,"delivertime":delivertime,"notes":notes}),
         contentType: "application/json; charset=utf-8",
         dataType   : 'json',
 
    
         success : console.log("Success write")
     });
-
-
-
-
-
+}
 
 
 });
 
-     
- 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
+     });
  

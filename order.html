@@ -36,6 +36,7 @@
     
     <div class="row">
     <div class="col-md-12">
+        <form>
         <p id="headOrderForm">ORDER FORM</p> <!-- headOrderForm -->
         
         <div class="row" id="rowOrderForm"> <!-- rowOrderForm -->
@@ -96,10 +97,10 @@
             <div class="col-md-6" id="Form"> <!-- Form -->
                 
                 <p class="pOrderForm noMarginTop">First name/Company name:<b class="star"> *</b></p> <!-- pOrderForm, noMarginTop -->
-                <input type="text"  id="fname" placeholder="First name/Company name" required>
+                <input type="text"   title="First big letter and others small max 15"  id="fname" placeholder="First name/Company name" required>
                 
                 <p class="pOrderForm">Last name/Company id:<b class="star"> *</b></p> <!-- pOrderForm, star -->
-                <input type="text" id="lname" placeholder="Last name/Company id:" required>
+                <input type="text" id="lname" pattern="^[A-Z]{1,1}[a-z]{1,15}$" title="First big letter and others small max 15" placeholder="Last name/Company id:" required>
                 
                 <p class="pOrderForm">E-mail:<b class="star">*</b></p> <!-- pOrderForm, star -->
                 <input type="email" id="email" placeholder="E-mail" required>
@@ -111,7 +112,7 @@
                 <input type="text" id="idcardnumber" placeholder="ID card number" required>
                 
                 <p class="pOrderForm">Notes:</p> <!-- pOrderForm -->
-                <input type="text" placeholder="Notes" required>
+                <input type="text" id="notes" placeholder="Notes" required>
                 
                 <p id="legend"><b class="star">*</b>required fields</p> <!-- legend -->
                 
@@ -120,13 +121,13 @@
                 <div class="col-md-12" id="buttomForm"> <!-- buttomForm -->
                     <p id="textPrice">Total price:</p> <!-- textPrice -->
                     <div id="price">1890 €</div> <!-- price -->
-                    <input type="submit" id="button" value="CONFIRM"> <!-- button -->
+                    <button type="button" id="button" value="SEND">SEND</button> <!-- button -->
                 </div> <!-- buttomForm -->
-            
+          
         </div> <!-- rowOrderForm -->
     </div>
     </div> <!-- ROW -->
-        
+       </form> 
     <div class="row"> <!-- FOOTER -->
     <div class="col-md-12" id="footer">              
     </div>
