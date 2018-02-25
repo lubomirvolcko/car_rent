@@ -1,0 +1,73 @@
+/* font for document */
+@font-face {
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* table collapse & border */
+table{
+	border-collapse: collapse;
+}
+
+/* table collapse & border */
+table, td, th {
+    border: 0.4vh solid #8e9ca5;
+}
+
+/* image aventador */
+.aventador{
+	width: 15vw;
+	text-align: center;
+}
+
+/* text for carname */
+.carname{
+	text-align: center;
+	font-size: 130%;
+	color: #1e394c;
+}
+
+/* table - th */
+.thtext{
+	font-size: 190%;
+	color: #8ac64a;
+	text-align: center;
+}
+
+/* <p> text */
+.text{
+	margin-top: 2vw;
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+/* class for centering img car */
+.centercar{
+	text-align: center;
+}
+
+/* white */
+.white{
+	color: white;
+}
+
+/* blue */
+.blue{
+	color: #1e394c;
+}
+
+/* background color for th text */
+.bgcolor {
+   background-color: #8e9ca5;
+}
+
+/* table color & margin */
+.tablecolor{
+	margin-top: 3vh;
+	background-color: #C9CED1;
+}
+
+/* margin size for "in agreement" */
+.marginsize{
+	margin-top: 7.5vh;
+}
