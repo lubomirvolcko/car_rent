@@ -150,12 +150,12 @@ li a:hover, li a:active {
 /* Pictures */
 .CarsSlideShow 
 {
-    height: 85%;
+    height: 30vw;
     
 }
 /* Car names */
 .carsName
 {
     color: #89c64a;
-        font-family: Bahnschrift, sans-serif;
+    font-family: Bahnschrift, sans-serif;
 }
