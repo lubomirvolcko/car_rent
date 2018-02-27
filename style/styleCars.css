@@ -1,6 +1,7 @@
 /* navbar2 */
 #navbar2 {
     margin-top: 2vh;
+    text-align: center;
 }
 
 /* divNavbar2*/
@@ -10,12 +11,17 @@
 
 /* navcars */
 .navcars {
+    float: right;
     color: #1e394c;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 3px solid #deddd9;
+}
+
+.navcars:hover, .navcars:visited {
+    border-bottom: 3px solid #8ac64a;
 }
 
 /* field */
@@ -113,3 +119,55 @@
     width: 50%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .navcars {
+        font-size: 2vw;
+        margin-top: 2vw;
+        margin-bottom: -2vw;
+        border-bottom: 1px;
+    }
+    
+    #carName {
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    .basicInfo {
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    .imgdecoration{
+        width: 5vw;
+    }
+    
+    .textdecoration {
+        font-size: 3vw;      
+    }
+    
+    .realprice{
+        font-size: 4vw;
+    }
+    
+    .price {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
