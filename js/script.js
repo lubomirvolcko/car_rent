@@ -203,5 +203,12 @@ $.ajax({
 
 
 
-     });
+}); /* function ready */
+ 
+function menuToggle(){
+    
+    $('#menuButton').click(function(){
+        $('#smallMenu').toggle();
+    });   
+}
  

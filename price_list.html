@@ -17,11 +17,14 @@
 	<div class="container"> <!-- container -->
     
     <div class="row" id="navbar"> <!-- navbar -->
-        <div class="col-md-2" id="divLogoNavbar"> <!-- div logo navbar -->
-            <img src="img/pageIndex/car_rent_logo.png" id="logoNavbar"> <!-- logo navbar --> 
+        <div class="col-md-2 col-12" id="divLogoNavbar"> <!-- div logo navbar -->
+            <img src="img/pageIndex/car_rent_logo.png" id="logoNavbar"> <!-- logo navbar -->
+            <button id="menuButton" class="navbar-toggler navbar-toggler-right" type="button" onclick="menuToggle()">
+                <img id="menu-icon" src="img/pageIndex/menu-icon.png">
+            </button>
         </div>
         <div class="col-md-10 backgroundNavbar"> <!-- ul, background on navbar -->
-            <ul> 
+            <ul id="menu"> 
                 <li><a onclick="window.location.href='index.html'"><p class="pNavbar">HOME</p></a></li> <!-- li, a, pNavbar  -->
                 <li><a onclick="window.location.href='cars.html'"><p class="pNavbar">CARS</p></a></li> <!-- li, a, pNavbar  -->
                 <li><a onclick="window.location.href='price_list.html'"><p class="pNavbar">PRICE LIST</p></a></li> <!-- li, a, pNavbar  -->
@@ -30,7 +33,20 @@
                 <li><a onclick="window.location.href='contact.html'"><p class="pNavbar">CONTACT</p></a></li> <!-- li, a, pNavbar  -->
             </ul>
         </div> <!-- ul, background on navbar -->
-    </div> <!-- navbar -->
+        <div id="smallMenu" class="col-12"> <!-- ul, background on navbar -->
+            <ul id="menu"> 
+                <li><a onclick="window.location.href='index.html'"><p class="pNavbar">HOME</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='cars.html'"><p class="pNavbar">CARS</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='price_list.html'"><p class="pNavbar">PRICE LIST</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='order.html'"><p class="pNavbar">ORDER</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='rent.html'"><p class="pNavbar">RENT</p></a></li> <!-- li, a, pNavbar  -->
+                <li><a onclick="window.location.href='contact.html'"><p class="pNavbar">CONTACT</p></a></li> <!-- li, a, pNavbar  -->
+            </ul>
+        </div> <!-- ul, background on navbar -->
+        
+        
+    </div> <!-- ROW navbar --> 
+        
     <div class="row size">
     <div class="col-md-12 tablecolor"> <!-- table color -->
     <table class="table"> <!-- table -->

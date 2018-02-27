@@ -9,6 +9,7 @@ body {
     
 }
 
+
 /* ROW NAVBAR */
 #navbar {
     text-align: center;
@@ -34,7 +35,6 @@ body {
 /* logo navbar:hover */
 #logoNavbar:hover {
     cursor: pointer;
-    height: 8.1vh;
 }
 
 /* ul */
@@ -83,6 +83,81 @@ li a:hover, li a:active {
 /* pNavbar:hover, pNavbar:active */
 .pNavbar:hover, .pNavbar:active {    
     filter: brightness(100%);
+}
+
+/* menuButton*/
+#menuButton{
+    height: 4vh;
+    float: right;
+    display: none;
+}
+
+/* menu-icon */
+#menu-icon {
+    height: 3vh;
+    filter: brightness(90%);
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+/* smallMenu */
+#smallMenu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #menuButton {
+        display: block;
+    }
+    
+    .backgroundNavbar {
+        display: none;
+    }
+    
+    #smallMenu {
+        background: linear-gradient(#dad9d5, white);
+        text-align: center;
+        margin-top: 2vh;
+    }
+    
+    #smallMenu li {
+        float: none;
+    }
+    
+    #smallMenu li a {
+        font-size: 3vw;
+        display: block;
+        color: #1e394c;
+        text-align: center;
+        padding: 0.4vw 10px;
+        height: 4vh;
+        border: none;
+    }
+
+    #smallMenu li a:hover,#smallMenu li a:active {
+        cursor: pointer;
+        font-weight: bold;
+        filter: brightness(100%);
+    }
+
+    #smallMenu .pNavbar:hover,#smallMenu .pNavbar:active {    
+        filter: brightness(100%);
+    }
+    
+    #divLogoNavbar {
+        text-align: left;
+    }    
+    
+    #logoNavbar {
+        margin-left: 2vh;
+    }
+    
+    #navbar {
+        text-align: center;
+    }
 }
 
 #firstBlockLink, #thirdBlockLink {
@@ -136,10 +211,6 @@ li a:hover, li a:active {
     right: 10.5vh;
 }
 
-.carousel-inner img {
-   height: 70vh;
-}
-
 /* footer */
 #footer {
     margin-top: 2vw;
@@ -147,15 +218,20 @@ li a:hover, li a:active {
     background-color: #1e394c;
 }
 
-/* Pictures */
-.CarsSlideShow 
-{
-    height: 30vw;
-    
-}
 /* Car names */
-.carsName
-{
+.carsName {
+    font-size: 3vw;
     color: #89c64a;
     font-family: Bahnschrift, sans-serif;
+}
+
+/* carousel-inner */
+.carousel-inner {
+    margin-top: 2.5vw;
+    width: 100%;
+}
+
+/* Pictures */
+.CarsSlideShow {
+    width: 80%;
 }
