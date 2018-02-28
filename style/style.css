@@ -8,34 +8,32 @@ body {
     background-repeat: no-repeat;
     
 }
-
-
-
 /* ROW NAVBAR */
 #navbar {
     text-align: center;
     color: white;
-    margin-top: 1.5vh;
+    margin-top: 20px;
 }
 
 /* div logo navbar */
 #divLogoNavbar {
     padding: 0px;
     background-color: #1e394c;
-    height: 4vh;
+    height: 40px;
     margin-top: 1vh;
     text-align: right;
 }
 
 /* logo navbar */
 #logoNavbar {
-    height: 8vh;
-    margin-top: -2vh;
+    height: 80px;
+    margin-top: -20px;
 }
 
 /* logo navbar:hover */
 #logoNavbar:hover {
     cursor: pointer;
+    height: 195%;
 }
 
 /* ul */
@@ -49,8 +47,9 @@ ul {
 /* background on navbar */
 .backgroundNavbar {
     background-color: #1e394c;
-    height: 4vh;
+    height: 40px;
     margin-top: 1vh;
+    width: 90%;
 }
 
 /* pNavbar */
@@ -62,6 +61,7 @@ ul {
 li {
     float: left;
     text-align: center;
+    margin-left: 1vw;
 }
 
 /* li, a */
@@ -95,7 +95,6 @@ li a:hover, li a:active {
 
 /* menu-icon */
 #menu-icon {
-    height: 3vh;
     filter: brightness(90%);
 }
 
@@ -109,9 +108,36 @@ li a:hover, li a:active {
     display: none;
 }
 
+/* footer */
+#footer {
+    color: white;
+    margin-top: 50px;
+    height: 40px;
+    background-color: #1e394c;
+    text-align: center;
+}
+
+/* footerLogo */
+#footerLogo {
+    height: 70px;
+    margin-top: -40px;
+}
+
+#footerLogo:hover {
+    cursor: pointer;
+    height: 150%;
+}
+
 @media screen and (max-width: 768px) {
     #menuButton {
         display: block;
+        height: 30px;
+        margin-right: 40px;
+    }
+    
+    #menu-icon {
+        height: 20px;
+        margin-top: -7px;
     }
     
     .backgroundNavbar {
@@ -119,13 +145,14 @@ li a:hover, li a:active {
     }
     
     #smallMenu {
-        background: linear-gradient(#dad9d5, white);
+        background: linear-gradient(rgba(255,0,0,0), white);
         text-align: center;
         margin-top: 2vh;
     }
     
     #smallMenu li {
-        float: none;
+        float: inherit;
+        margin-left: -40px;
     }
     
     #smallMenu li a {
@@ -138,10 +165,11 @@ li a:hover, li a:active {
         border: none;
     }
 
-    #smallMenu li a:hover,#smallMenu li a:active {
+    #smallMenu p:hover {
         cursor: pointer;
         font-weight: bold;
         filter: brightness(100%);
+        border-bottom: 2px solid #89c64a;
     }
 
     #smallMenu .pNavbar:hover,#smallMenu .pNavbar:active {    
@@ -150,14 +178,59 @@ li a:hover, li a:active {
     
     #divLogoNavbar {
         text-align: left;
+        height: 30px;
+        margin-top: 10px;
     }    
     
     #logoNavbar {
-        margin-left: 2vh;
+        margin-left: 40px;
+        height: 70px;
     }
     
     #navbar {
         text-align: center;
+    }
+    
+    #footer {
+        height: 30px;
+        margin-top: 30px;
+    }
+    
+    #footerLogo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #footer {
+        height: 20px;
+        margin-top: 25px;
+    }
+    
+    #footerLogo {
+        height: 40px;
+    }
+    
+    #divLogoNavbar {
+        height: 25px;
+        margin-top: 10px;
+    }    
+    
+    #logoNavbar {
+        margin-left: 25px;
+        height: 40px;
+        margin-top: -9px;
+    }
+    
+    #menuButton {
+        display: block;
+        height: 20px;
+        margin-right: 20px;
+    }
+    
+    #menu-icon {
+        height: 15px;
+        margin-top: -12px;
     }
 }
 
@@ -210,13 +283,6 @@ li a:hover, li a:active {
 #thirdBlockLinkText {
     top: 6.5vh;
     right: 10.5vh;
-}
-
-/* footer */
-#footer {
-    margin-top: 2vw;
-    height: 3vw;
-    background-color: #1e394c;
 }
 
 /* Car names */
