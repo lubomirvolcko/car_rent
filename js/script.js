@@ -1,5 +1,6 @@
  $(document).ready(function() {
  var ba=$("#ba").val();
+
  //TIME AND DATE
 var today= new Date();
 var time = today.getHours() + ":" + today.getMinutes()  
@@ -13,6 +14,7 @@ var today2=today2.getFullYear()+1+"-"+(month2)+"-"+(day2) ;
 
 $("#inputDate").attr("min",today);
 $("#inputDate").attr("value",today);
+$("#inputDelDate").attr("value",today);
 $("#inputDelDate").attr("min",today);
 $("#inputDelDate").attr("max",today2);
 
@@ -144,13 +146,12 @@ console.log(urllink);
 
 
 
-  var enabled = "enabled";
-  var disabled = "disabled";
+ 
   
 
 
    $("#button").click(function(){ 
-
+  var cat =$("#cat").val();
   var choosenCar = $("#dbcar").val();
   var pickplace=$("#pickup").val();
   var deliverplace=$("#deliver").val();
@@ -164,17 +165,23 @@ console.log(urllink);
   var deliverdate = $("#inputDelDate").val();
   var delivertime = $("#inputDelTime").val();
   var notes = $("#notes").val();
+  
+   
  //REGEX
-var firstnameregex = /^[A-Z]{1,1}[a-z]{1,15}$/;
-var lastnameregex= /^[A-Z]{1,1}[a-z]{1,15}$/;
+var firstnameregex = /^[A-ZÁ-Ž]{1,1}[a-zá-ž]{1,15}$/;
+var lastnameregex= /^[A-ZÁ-Ž]{1,1}[a-zá-ž]{1,15}$/;
 var emailregex=  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 var numberregex = /^[+][4][2][1][9][0-9]{8}$/;
 var idcardregex = /^[E][A-Z][0-9]{6}$/;
-if(firstname.match(firstnameregex)==null||lastname.match(lastnameregex)==null||number.match(numberregex)==null||idcardnumber.match(idcardregex)==null||email.match(emailregex)==null)
-alert("Something Wrong");
-else{
-ajax();}
 
+if(delivertime==""||picktime==""||deliverplace==null||pickplace==null||cat==null||firstname.match(firstnameregex)==null||lastname.match(lastnameregex)==null||number.match(numberregex)==null||idcardnumber.match(idcardregex)==null||email.match(emailregex)==null){
+alert("Ooopss. Something wrong. Please check your inserted values");
+}
+
+
+else{
+
+ajax();}
 
 
   
@@ -201,14 +208,15 @@ $.ajax({
 });
 
 
+  $('#menuButton').click(function(){
+  $('#smallMenu').toggle();
+
+    });
 
 
 }); /* function ready */
  
-function menuToggle(){
+
     
-    $('#menuButton').click(function(){
-        $('#smallMenu').toggle();
-    });   
-}
+  
  
