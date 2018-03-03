@@ -50,14 +50,18 @@
     
     <div class="row">
     <div class="col-md-12">
-        <form>
-        <p id="headOrderForm">ORDER FORM</p> <!-- headOrderForm -->
-        
+      
+      
+        <p id="headOrderForm">ORDER FORM</p><p id="checkvalues">Please check if everything is okay</p><p id="thank">Thanks you for your order!</p><!-- headOrderForm -->
+        <form id="form">
         <div class="row" id="rowOrderForm"> <!-- rowOrderForm -->
             
             <div class="col-md-6" id="Form"> <!-- Form -->
-                            
+                   
+                    
+                          
                 <p class="pOrderForm noMarginTop">Category:<b class="star"> *</b></p> <!-- noMarginTop, star -->
+                 
                 <select required  id="cat">
                     <option selected="true" disabled="disabled">Choose category</option>
                     <option>Luxury</option>
@@ -65,26 +69,33 @@
                     <option>Economy</option>
                     <option>Vans</option>
                 </select>
-                
+              <p id="confirmcat"</p>
+            
                 <p class="pOrderForm">Car:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                  
                 <select required id="dbcar">
                     <option selected="true" disabled="disabled" >Choose car</option>
-                 
+               
                 </select>
-                
-                <p class="pOrderForm">Pick-up date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+              <p id="confirmcar"</p>
+                <p class="pOrderForm">Pick-up date:<b class="star"> *</b></p><p id="confirmpickdate"</p><!-- pOrderForm, star -->
                 <div class="row">
                     <div class="col-md-12">
                         <input type="date" id="inputDate" onkeydown="return false" >
-                        <input type="time" id="inputTime" min="10:00" max="20:00" onkeydown="return false" >
+
+                        <input type="time"  id="inputTime" min="10:00" max="20:00" onkeydown="return false" >
+                        <p class="pOrderForm" id="picktime">Pick-up time:</p><p id="confirmpicktime"></p>
+
                     </div>
                 </div>
                 
-                <p class="pOrderForm">Delivery date:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <p class="pOrderForm">Delivery date:<b class="star"> *</b></p><p id="confirmdeldate"</p> <!-- pOrderForm, star -->
                 <div class="row">
                     <div class="col-md-12 ">
                         <input type="date" id="inputDelDate" onkeydown="return false">
-                        <input type="time" id="inputDelTime" onkeydown="return false" min="10:00" max="20:00">
+                         
+                        <input type="time"  id="inputDelTime" onkeydown="return false" min="10:00" max="20:00">
+                        <p class="pOrderForm" id="delltime">Deliver time:</p><p id="confirmdeltime"></p>
                     </div>
                 </div>
                 
@@ -96,7 +107,7 @@
                     <option>Zilina</option>
                     <option>Kosice</option>
                 </select>
-                
+                <p id="confirmpickplace"</p>
                 <p class="pOrderForm">Delivery place:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <select required id="deliver">
                     <option selected="true" disabled="disabled">Choose city</option>
@@ -105,29 +116,36 @@
                     <option>Zilina</option>
                     <option>Kosice</option>
                 </select>
-                
+                <p id="confirmdelplace"</p>
             </div> <!-- Form -->
-            
+       
             <div class="col-md-6" id="Form"> <!-- Form -->
                 
+                <form id="form">
                 <p class="pOrderForm noMarginTop">First name/Company name:<b class="star"> *</b></p> <!-- pOrderForm, noMarginTop -->
                 <input type="text"   id="fname" placeholder="First letter uppercase!" required>
-                
+                <p id="confirmfname"</p>
+
                 <p class="pOrderForm">Last name/Company id:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <input type="text" id="lname" placeholder="First letter uppercase!" required>
-                
+                <p id="confirmlname"</p>
+
                 <p class="pOrderForm">E-mail:<b class="star">*</b></p> <!-- pOrderForm, star -->
                 <input type="email" id="email" placeholder=" test@test.com" required>
-                
-                <p class="pOrderForm">Contact number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
+                <p id="confirmmail"</p>
+
+                <p class="pOrderForm">Contact number:<b class="star"> *</b></p><!-- pOrderForm, star -->
                 <input type="text" id="number" placeholder=" +4219xxxxxxxx" required>
-                
+                <p id="confirmnumber"</p> 
+
                 <p class="pOrderForm">ID card number:<b class="star"> *</b></p> <!-- pOrderForm, star -->
                 <input type="text" id="idcardnumber" placeholder="ED123456" required>
-                
+                <p id="confirmidnumber"</p>
+
                 <p class="pOrderForm">Notes:</p> <!-- pOrderForm -->
                 <input type="text" id="notes" placeholder="Notes" required>
-                
+                <p id="confirmnotes"</p>
+
                 <p id="legend"><b class="star">*</b>required fields</p> <!-- legend -->
                 
             </div> <!-- Form -->
@@ -135,7 +153,9 @@
                 <div class="col-md-12" id="buttomForm"> <!-- buttomForm -->
                     <p id="textPrice">Total price:</p> <!-- textPrice -->
                     <div id="price">1890 €</div> <!-- price -->
-                    <button type="button" id="button" value="SEND">SEND</button> <!-- button -->
+                    <button type="button" id="button" value="CONFIRM">CONFIRM</button>
+                     <button type="button" id="send"  value="CONFIRM">SEND</button>
+                      <button type="button" id="repair" value="CONFIRM">CHANGE</button> <!-- button -->
                 </div> <!-- buttomForm -->
           
         </div> <!-- rowOrderForm -->

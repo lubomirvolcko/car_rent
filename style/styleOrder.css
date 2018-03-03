@@ -1,5 +1,5 @@
 /* headOrderForm */
-#headOrderForm {
+#headOrderForm,#checkvalues,#thank {
     color: #1e394c;
     text-align: center;
     font-size: 2vw;
@@ -16,6 +16,16 @@ input[type=time]::-webkit-clear-button {
     display: none;
 }
 
+#delltime,#picktime,#send,#repair
+{
+
+    display:none;
+}
+
+#checkvalues,#thank
+{
+    display:none;
+}
 
 /* rowOrderForm */
 #rowOrderForm {
@@ -98,7 +108,7 @@ select, input {
 }
 
 /* button */
-#button {
+#button,#repair,#send {
     text-align: center;
     font-weight: bold;
     border: none;
@@ -109,7 +119,7 @@ select, input {
 }
 
 /* button:hover */
-#button:hover {
+#button:hover,#repair:hover,#send:hover {
     cursor: pointer;
     background-color: #9fd763;
 }

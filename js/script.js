@@ -1,7 +1,11 @@
- $(document).ready(function() {
+
+$(document).ready(function() {
  var ba=$("#ba").val();
 
+
+
  //TIME AND DATE
+
 var today= new Date();
 var time = today.getHours() + ":" + today.getMinutes()  
 var day = ("0" + today.getDate()).slice(-2);
@@ -165,6 +169,12 @@ console.log(urllink);
   var deliverdate = $("#inputDelDate").val();
   var delivertime = $("#inputDelTime").val();
   var notes = $("#notes").val();
+
+
+
+
+
+
   
    
  //REGEX
@@ -181,13 +191,94 @@ alert("Ooopss. Something wrong. Please check your inserted values");
 
 else{
 
-ajax();}
+$("#cat").hide();
+$("#dbcar").hide();
+$("#pickup").hide();
+$("#deliver").hide();
+$("#fname").hide();
+$("#lname").hide();
+$("#email").hide();
+$("#number").hide();
+$("#idcardnumber").hide();
+$("#inputDate").hide();
+$("#inputTime").hide();
+$("#inputDelDate").hide();
+$("#inputDelTime").hide();
+$("#notes").hide();
+$("#button").hide();
+$("#headOrderForm").hide()
+
+$("#checkvalues").css("display", "block");
+
+$("#confirmcat").text(cat);
+$("#confirmcar").text(choosenCar);
+$("#confirmpickdate").text(pickdate);
+$("#confirmdeldate").text(deliverdate);
+$("#confirmpickplace").text(pickplace);
+$("#confirmdelplace").text(deliverplace);
+$("#confirmfname").text(firstname);
+$("#confirmlname").text(lastname);
+$("#confirmmail").text(email);
+$("#confirmnumber").text(number);
+$("#confirmidnumber").text(idcardnumber);
+$("#confirmnotes").text(notes);
+$("#picktime").css("display", "inline");
+$("#confirmpicktime").html(picktime);
+$("#delltime").css("display", "inline");
+$("#confirmdeltime").html(delivertime);
+$("#send").css("display", "inline");
+$("#repair").css("display", "inline");
 
 
+ $("#confirmcat").show();
+$("#confirmcar").show();
+$("#confirmpickplace").show();
+$("#confirmdelplace").show();
+$("#confirmfname").show();
+$("#confirmlname").show();
+$("#confirmmail").show();
+$("#confirmnumber").show();
+$("#confirmpickdate").show();
+$("#confirmdeldate").show();
+$("#confirmidnumber").show();
+$("#confirmpicktime").show();
+$("#confirmdeltime").show();
+$("#confirmnotes").show();
+$("#delltime").show();
+$("#picktime").show();
+
+
+
+}
+
+
+});
+
+
+$("#send").click(function(){ 
   
+  var choosenCar =  $("#confirmcar").text();
+  var pickplace=$("#confirmpickplace").text();
+  var deliverplace=$("#confirmdelplace").text();
+  var firstname = $("#confirmfname").text();
+  var lastname = $("#confirmlname").text();
+  var email = $("#confirmmail").text();
+  var number = $("#confirmnumber").text();
+  var idcardnumber = $("#confirmidnumber").text();
+  var pickdate =$("#inputDate").val();
+  var picktime = $("#inputTime").val();
+  var deliverdate = $("#inputDelDate").val();
+  var delivertime = $("#inputDelTime").val();
+  var notes = $("#confirmnotes").text();
+
+ 
 
 
-function ajax(){
+
+
+
+
+
 $.ajax({
         url : "http://localhost:8080/information/new",
 
@@ -200,9 +291,48 @@ $.ajax({
         dataType   : 'json',
 
    
-        success : console.log("Success write")
+        success : send()
     });
-}
+
+});
+
+$("#repair").click(function(){ 
+
+$("#headOrderForm").hide()
+$("#confirmcat").hide();
+$("#confirmcar").hide();
+$("#confirmpickplace").hide();
+$("#confirmdelplace").hide();
+$("#confirmfname").hide();
+$("#confirmlname").hide();
+$("#confirmmail").hide();
+$("#confirmnumber").hide();
+$("#confirmpickdate").hide();
+$("#confirmdeldate").hide();
+$("#confirmidnumber").hide();
+$("#confirmpicktime").hide();
+$("#confirmdeltime").hide();
+$("#confirmnotes").hide();
+$("#delltime").hide();
+$("#picktime").hide();
+
+$("#cat").show();
+$("#cat").show();
+$("#dbcar").show();
+$("#pickup").show();
+$("#deliver").show();
+$("#fname").show();
+$("#lname").show();
+$("#email").show();
+$("#number").show();
+$("#idcardnumber").show();
+$("#inputDate").show();
+$("#inputTime").show();
+$("#inputDelDate").show();
+$("#inputDelTime").show();
+$("#notes").show();
+$("#button").show();
+$("#send").hide();
 
 
 });
@@ -217,6 +347,12 @@ $.ajax({
 }); /* function ready */
  
 
-    
+function send()
+{
+
+  $("#form").hide();
+  $("#thank").css("display", "block");
+  $("#checkvalues").css("display", "none");
+}    
   
  
