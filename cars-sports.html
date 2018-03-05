@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/script-cars.js"></script>
     <title>CarRent - Cars</title>
 </head>
     
@@ -83,7 +84,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setAventador(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -92,6 +93,60 @@
         </div>      
     </div> <!-- bgcolor -->
   </div> <!-- field -->
+        
+        <!-- gallery -->
+      
+      <div id="myModal" class="modal">
+  <span class="close cursor" id="closeButton" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="img1" src="img/pageCars/economy/golf/golf1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="img2" src="img/pageCars/economy/golf/golf2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img class="img3" src="img/pageCars/economy/golf/golf3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="img4" src="img/pageCars/economy/golf/golf4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div>
+        <div class="column">
+      <img class="demo cursor img1 name" src="img/pageCars/economy/golf/golf1.png" style="width:100%" onclick="currentSlide(1)" alt="Volkswagen Golf">
+    </div>
+    <div class="column">
+      <img class="demo cursor img2 name" src="img/pageCars/economy/golf/golf2.png" style="width:100%" onclick="currentSlide(2)" alt="Volkswagen Golf">
+    </div>
+    <div class="column">
+      <img class="demo cursor img3 name" src="img/pageCars/economy/golf/golf3.png" style="width:100%" onclick="currentSlide(3)" alt="Volkswagen Golf">
+    </div>
+    <div class="column">
+      <img class="demo cursor img4 name" src="img/pageCars/economy/golf/golf4.png" style="width:100%" onclick="currentSlide(4)" alt="Volkswagen Golf">
+    </div>
+    </div>
+    
+  </div>
+</div>  
+        
+  <!-- gallery -->      
+        
         
   <div class="row field"> <!-- field -->
     <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
@@ -114,7 +169,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setMclaren(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -145,7 +200,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setAston(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -176,7 +231,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setChiron(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -207,7 +262,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setViper(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -238,7 +293,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setNissan(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -269,7 +324,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setCamaro(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -300,7 +355,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setMustang(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -331,7 +386,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setAlfa(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -343,7 +398,7 @@
 
    <div class="row field"> <!-- field -->
     <div class="col-md-3 bgcolorcar"> <!-- bgcolorcar -->
-      <img src="img/pageCars/Mercedes-Benz S-Class.png" class="width"> <!-- width -->
+      <img src="img/pageCars/gts.png" class="width"> <!-- width -->
     </div> <!-- bgcolorcar -->
     <div class="col-md-9 bgcolor"> <!-- bgcolor -->
         <div class="row">
@@ -362,7 +417,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setGts(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
@@ -393,7 +448,7 @@
             <div class="col-md-12 panels"> <!-- panels -->
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="window.location.href='suka.html'"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
+                        <img src="img/pageCars/gallery.png" class="imgsize" onclick="setCorvette(), openModal(), currentSlide(1)"><img src="img/pageCars/price_list.png" class="sizepricelist" onclick="window.location.href='price_list.html'"><img src="img/pageCars/order.png" class="imgsize" onclick="window.location.href='order.html'"> <!-- imgsize, sizepricelist  -->
                     </div>
                 </div>
                 </div> <!-- panels -->
