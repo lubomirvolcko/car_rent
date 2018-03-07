@@ -195,6 +195,11 @@ console.log(urllink);
   var delivertime = $("#inputDelTime").val();
   var notes = $("#notes").val();
 
+ var tajm=$("#inputDate").val();
+ var tajm2=$("#inputDelDate").val();
+
+
+
 
 
 
@@ -212,6 +217,8 @@ var idcardregex = /^[E][A-Z][0-9]{6}$/;
 if(delivertime==""||picktime==""||deliverplace==null||pickplace==null||cat==null||firstname.match(firstnameregex)==null||lastname.match(lastnameregex)==null||number.match(numberregex)==null||idcardnumber.match(idcardregex)==null||email.match(emailregex)==null){
 alert("Ooopss. Something wrong. Please check your inserted values");
 }
+else if(tajm==tajm2)
+alert("Sorry you cannot insert same Pick-up and Delivery date!");
 
 
 else{
@@ -296,17 +303,9 @@ $("#send").click(function(){
   var delivertime = $("#inputDelTime").val();
   var notes = $("#confirmnotes").text();
 
- 
- var tajm=$("#inputDate").val();
- var tajm2=$("#inputDelDate").val();
 
-if(tajm==tajm2)
-{
-alert("Sorry you cannot insert same Pick-up and Delivery date!");
 
-}
-else
-{
+
 
   $.ajax({
         url : "http://localhost:8080/information/new",
@@ -325,7 +324,7 @@ else
 
 
 
-}
+
 
 
 
