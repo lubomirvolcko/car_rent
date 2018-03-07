@@ -1,12 +1,20 @@
-
 $(document).ready(function() {
  var ba=$("#ba").val();
 
 
 
+
+
+
+
+
+
+
  //TIME AND DATE
 
+
 var today= new Date();
+
 var time = today.getHours() + ":" + today.getMinutes()  
 var day = ("0" + today.getDate()).slice(-2);
 var month = ("0" + (today.getMonth() + 1)).slice(-2);
@@ -16,11 +24,28 @@ var day2 = ("0" + today2.getDate()).slice(-2);
 var month2 = ("0" + (today2.getMonth() + 1)).slice(-2);
 var today2=today2.getFullYear()+1+"-"+(month2)+"-"+(day2) ;
 
+
+
+var nulll =" ";
+
 $("#inputDate").attr("min",today);
-$("#inputDate").attr("value",today);
-$("#inputDelDate").attr("value",today);
+
 $("#inputDelDate").attr("min",today);
+
+$("#inputDate").change(function(){
+
+var date = $("#inputDate").val();
+console.log(date);
+$("#inputDelDate").val(nulll);
+
+$("#inputDelDate").attr("min",date);
+
+});
+
+
+
 $("#inputDelDate").attr("max",today2);
+
 
 //SHOW MAP 
     
@@ -272,14 +297,18 @@ $("#send").click(function(){
   var notes = $("#confirmnotes").text();
 
  
+ var tajm=$("#inputDate").val();
+ var tajm2=$("#inputDelDate").val();
 
+if(tajm==tajm2)
+{
+alert("Sorry you cannot insert same Pick-up and Delivery date!");
 
+}
+else
+{
 
-
-
-
-
-$.ajax({
+  $.ajax({
         url : "http://localhost:8080/information/new",
 
         type: "POST",
@@ -293,6 +322,17 @@ $.ajax({
    
         success : send()
     });
+
+
+
+}
+
+
+
+
+
+
+
 
 });
 
@@ -354,5 +394,3 @@ function send()
   $("#thank").css("display", "block");
   $("#checkvalues").css("display", "none");
 }    
-  
- 
