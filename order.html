@@ -12,6 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+
+<link rel="stylesheet" href="timepicker/jquery.timepicker.min.css">
     <title>CarRent - Order</title>
 </head>
     
@@ -84,7 +86,7 @@
                     <div class="col-md-12">
                         <input type="date" id="inputDate" onkeydown="return false" >
 
-                        <input type="time"  id="inputTime" min="10:00" max="20:00" onkeydown="return false" >
+                        <input type="text"  id="inputTime" min="10:00" max="20:00" onkeydown="return false" >
                         <p class="pOrderForm" id="picktime">Pick-up time:</p><p id="confirmpicktime"></p>
 
                     </div>
@@ -95,7 +97,7 @@
                     <div class="col-md-12 ">
                         <input type="date" id="inputDelDate" onkeydown="return false">
                          
-                        <input type="time"  id="inputDelTime" onkeydown="return false" min="10:00" max="20:00">
+                        <input type="text"  id="inputDelTime" onkeydown="return false" min="10:00" max="20:00">
                         <p class="pOrderForm" id="delltime">Deliver time:</p><p id="confirmdeltime"></p>
                     </div>
                 </div>
@@ -173,5 +175,6 @@
     </div> <!-- ROW footer -->
    
     </div><!-- CONTAINER -->
+    <script src="timepicker/jquery.timepicker.min.js"></script>
 </body>
 </html>

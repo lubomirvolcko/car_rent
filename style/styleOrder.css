@@ -27,6 +27,13 @@ input[type=time]::-webkit-clear-button {
     display:none;
 }
 
+input:required {
+    box-shadow:none;
+}
+input:invalid {
+    box-shadow:0 0 3px white;
+}
+
 
 
 /* rowOrderForm */

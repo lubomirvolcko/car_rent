@@ -2,7 +2,31 @@ $(document).ready(function() {
  var ba=$("#ba").val();
 
 
+$('#inputTime').timepicker({
+    timeFormat: 'HH:mm ',
+    interval: 30,
+    minTime: '10',
+    maxTime: '8:00pm',
+    defaultTime: '10',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
 
+
+
+$('#inputDelTime').timepicker({
+    timeFormat: 'HH:mm ',
+    interval: 30,
+    minTime: '10',
+    maxTime: '8:00pm',
+    defaultTime: '10',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
 
 
 $("#help").hide();
