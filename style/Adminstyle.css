@@ -1,0 +1,37 @@
+.lol {
+    text-align: center;
+} 
+
+.set
+{
+  text-align: center;
+}
+
+h1
+{
+  margin-left: 10px;
+}
+
+
+
+#button
+{
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+table, th, td {
+   border: 1px solid black;
+   width: 5%;
+}
+#tablelogin
+{
+
+	margin-left:30px;
+	border: 0px;
+}
+
+
+#checkBox{
+display:none;
+}

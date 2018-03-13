@@ -9,36 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+      <link rel="stylesheet" href="style/Adminstyle.css">
+    <script src="js/login.js"></script>
     <title>Admin</title>
 
-    <style>
-.lol {
-    text-align: center;
-} 
+  
 
-.set
-{
-  text-align: center;
-}
-
-h1
-{
-  margin-left: 10px;
-}
-
-table
-{
-  margin-left: 30px;
-}
-
-#button
-{
-  margin-top: 10px;
-  margin-left: 40px;
-}
-
-</style>
 </head>
 <body>
 
@@ -47,9 +23,10 @@ table
     <div class="col-sm-4">
     </div>
     <div class="col-sm-4">
+      <form id="form">
       <h1>Admin Login: </h1> 
 
-<table>
+<table id="tablelogin">
 
 
 <tr>
@@ -65,6 +42,7 @@ table
  <td>
  <label class="lol" >Password:</label>
   <div><input type="password" placeholder="Password"  class="set" id="pwd"></div>
+  <input id="checkBox" type="checkbox">
    </td>
 </tr>
 
@@ -80,6 +58,7 @@ table
   </div>
 </div>
 
-
+</form>
+<div id="apo"></div>
 </body>
 </html>
