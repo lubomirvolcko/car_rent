@@ -1,37 +1,67 @@
-.lol {
+#form {
     text-align: center;
+}
+
+.lol {
+    color: #1e394c;
+    float: left;
+    margin-left: 15px;
+    font-weight: bold;
 } 
 
-.set
-{
-  text-align: center;
+.set {
+    text-align: center;
 }
 
-h1
-{
-  margin-left: 10px;
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #1e394c;
 }
 
+#button {
+    margin-top: 10px;
+    filter: brightness(90%);
+}
 
-
-#button
-{
-  margin-top: 10px;
-  margin-left: 40px;
+#button:hover {
+    filter: brightness(100%);
 }
 
 table, th, td {
-   border: 1px solid black;
    width: 5%;
 }
-#tablelogin
-{
 
-	margin-left:30px;
-	border: 0px;
+#tablelogin {
+    margin: 0px auto;
+    text-align: center;    
+    background-color: white;
+    border: none;
+    box-shadow: 3px 3px 3px grey;
+    width: 200px;
+    padding-bottom: 200px;
 }
 
+#checkBox {
+    display:none;
+}
 
-#checkBox{
-display:none;
+#usr, #pwd {
+    border: none;
+    border-bottom: 2px solid #8ac64a;
+    margin-bottom: 10px;
+}
+
+#apo {
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    box-shadow: 3px 3px 3px grey;
+    overflow: scroll; /* Scrollbar are always visible */
+    overflow: auto;   /* Scrollbar is displayed as it's needed */
+}
+
+#apo table {    
+    border-collapse: collapse;
 }

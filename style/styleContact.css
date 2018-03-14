@@ -66,3 +66,308 @@ td {
     height: 3vw;
     background-color: #1e394c;
 }
+
+/* font for document */
+@font-face {
+    font-family: Bahnschrift, sans-serif;
+}
+
+body {
+    background: linear-gradient(#dad9d5, white);
+    background-repeat: no-repeat;
+    
+}
+/* ROW NAVBAR */
+#navbar {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* div logo navbar */
+#divLogoNavbar {
+    padding: 0px;
+    background-color: #1e394c;
+    height: 40px;
+    margin-top: 1vh;
+    text-align: right;
+}
+
+/* logo navbar */
+#logoNavbar {
+    height: 80px;
+    margin-top: -20px;
+}
+
+/* logo navbar:hover */
+#logoNavbar:hover {
+    cursor: pointer;
+    height: 195%;
+}
+
+/* ul */
+ul { 
+    list-style-type: none;
+    padding: 0px auto;
+    text-align: center;
+    align-content: center;
+}
+
+/* background on navbar */
+.backgroundNavbar {
+    background-color: #1e394c;
+    height: 40px;
+    margin-top: 1vh;
+    width: 90%;
+}
+
+/* pNavbar */
+.pNavbar {    
+    filter: brightness(75%);
+}
+
+/* li */
+li {
+    float: left;
+    text-align: center;
+    margin-left: 1vw;
+}
+
+/* li, a */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.4vw 10px;
+    border-bottom: 3px solid #1e394c;
+    height: 4vh;
+}
+
+/* li, a:hover; li, a:active */
+li a:hover, li a:active {
+    cursor: pointer;
+    filter: brightness(100%);
+    border-bottom: 3px solid #8ac64a;
+}
+
+/* pNavbar:hover, pNavbar:active */
+.pNavbar:hover, .pNavbar:active {    
+    filter: brightness(100%);
+}
+
+/* menuButton*/
+#menuButton{
+    height: 4vh;
+    float: right;
+    display: none;
+}
+
+/* menu-icon */
+#menu-icon {
+    filter: brightness(90%);
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+/* smallMenu */
+#smallMenu {
+    display: none;
+}
+
+/* footer */
+#footer {
+    color: white;
+    margin-top: 50px;
+    height: 40px;
+    background-color: #1e394c;
+    text-align: center;
+}
+
+/* footerLogo */
+#footerLogo {
+    height: 70px;
+    margin-top: -40px;
+}
+
+#footerLogo:hover {
+    cursor: pointer;
+    height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+    #menuButton {
+        display: block;
+        height: 30px;
+        margin-right: 40px;
+    }
+    
+    #menu-icon {
+        height: 20px;
+        margin-top: -7px;
+    }
+    
+    .backgroundNavbar {
+        display: none;
+    }
+    
+    #smallMenu {
+        background: linear-gradient(rgba(255,0,0,0), white);
+        text-align: center;
+        margin-top: 2vh;
+    }
+    
+    #smallMenu li {
+        float: inherit;
+        margin-left: -40px;
+    }
+    
+    #smallMenu li a {
+        font-size: 3vw;
+        display: block;
+        color: #1e394c;
+        text-align: center;
+        padding: 0.4vw 10px;
+        height: 4vh;
+        border: none;
+    }
+
+    #smallMenu p:hover {
+        cursor: pointer;
+        font-weight: bold;
+        filter: brightness(100%);
+        border-bottom: 2px solid #89c64a;
+    }
+
+    #smallMenu .pNavbar:hover,#smallMenu .pNavbar:active {    
+        filter: brightness(100%);
+    }
+    
+    #divLogoNavbar {
+        text-align: left;
+        height: 30px;
+        margin-top: 10px;
+    }    
+    
+    #logoNavbar {
+        margin-left: 40px;
+        height: 70px;
+    }
+    
+    #navbar {
+        text-align: center;
+    }
+    
+    #footer {
+        height: 30px;
+        margin-top: 30px;
+    }
+    
+    #footerLogo {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #footer {
+        height: 20px;
+        margin-top: 25px;
+    }
+    
+    #footerLogo {
+        height: 40px;
+    }
+    
+    #divLogoNavbar {
+        height: 25px;
+        margin-top: 10px;
+    }    
+    
+    #logoNavbar {
+        margin-left: 25px;
+        height: 40px;
+        margin-top: -9px;
+    }
+    
+    #menuButton {
+        display: block;
+        height: 20px;
+        margin-right: 20px;
+    }
+    
+    #menu-icon {
+        height: 15px;
+        margin-top: -12px;
+    }
+}
+
+#firstBlockLink, #thirdBlockLink {
+    text-align: right;
+    filter: brightness(75%);
+}
+
+#firstBlockLink:hover, #thirdBlockLink:hover {
+    filter: brightness(100%);
+}
+
+#secondBlockLink {
+    filter: brightness(75%);
+}
+
+#secondBlockLink:hover {
+    filter: brightness(100%);
+}
+
+
+#firstBlockLinkImg, #secondBlockLinkImg, #thirdBlockLinkImg {
+    width: 100%;
+    object-fit: contain;
+}
+
+#firstBlockLinkImg:hover, #secondBlockLinkImg:hover, #thirdBlockLinkImg:hover {
+    cursor: pointer;
+}
+
+#fisrtBlockLinkText, #secondBlockLinkText, #thirdBlockLinkText {
+    font-size: 3vw;
+    color: #89c64a;
+    text-align: center;
+    letter-spacing: 1vh;
+    position: absolute;    
+    cursor: pointer;
+}
+
+#fisrtBlockLinkText {    
+    top: 4.5vh;
+    right: 9.5vh;
+}
+
+#secondBlockLinkText {
+    top: 4.5vh;
+    left: 10.5vh;
+}
+
+#thirdBlockLinkText {
+    top: 6.5vh;
+    right: 10.5vh;
+}
+
+/* Car names */
+.carsName {
+    font-size: 3vw;
+    color: #89c64a;
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* carousel-inner */
+.carousel-inner {
+    margin-top: 2.5vw;
+    width: 100%;
+}
+
+/* Pictures */
+.CarsSlideShow {
+    width: 100%;
+}
