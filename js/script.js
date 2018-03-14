@@ -332,6 +332,7 @@ $("#send").click(function(){
   var deliverdate = $("#inputDelDate").val();
   var delivertime = $("#inputDelTime").val();
   var notes = $("#confirmnotes").text();
+  var totalprice=$("#price").text();
 
 
 
@@ -344,7 +345,7 @@ $("#send").click(function(){
         data: JSON.stringify({"choosenCar": choosenCar,"pickplace": pickplace,
         "deliverplace":deliverplace,"firstname":firstname,"lastname":lastname,
         "email":email,"number":number,"idcardnumber":idcardnumber,"pickdate":pickdate,"picktime":picktime,
-        "deliverdate":deliverdate,"delivertime":delivertime,"notes":notes}),
+        "deliverdate":deliverdate,"delivertime":delivertime,"notes":notes,"totalprice":totalprice}),
         contentType: "application/json; charset=utf-8",
         dataType   : 'json',
 
@@ -402,6 +403,7 @@ $("#inputDelTime").show();
 $("#notes").show();
 $("#button").show();
 $("#send").hide();
+$("#repair").hide();
 
 
 });
