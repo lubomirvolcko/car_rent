@@ -1,10 +1,12 @@
 $(document).ready(function() {
-
+$("#apo").hide();
 
 
  $("#button").click(function(){
 var username = $("#usr").val();
 var password = $("#pwd").val();
+
+    $("#apo").show;
 
 $.ajax({
         url : "http://localhost:8080/auth/login",
@@ -52,8 +54,8 @@ $.ajax({
       
    function afterlogin()
    {
-
-   	$("#form").hide();
+    $("#form").hide();
+    $("#apo").show();
    }
 
    
@@ -63,7 +65,7 @@ $.ajax({
 });
 
 
-	 
+   
 
 
 
@@ -93,19 +95,12 @@ $.ajax({
      function getTable(data) 
    {
 
-   	
-   	
-   	var x=data;
+    
+    
+    var x=data;
 
-   	
-   	
-   	for(var i in x)
-
-   	$("#apo").html(x[i]);
+    
+    
+    for(var i in x)
+    $("#apo").html(x[i]);
    }
-
-
-
-
-
-

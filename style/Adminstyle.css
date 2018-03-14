@@ -58,10 +58,33 @@ table, th, td {
     width: 80%;
     background-color: white;
     box-shadow: 3px 3px 3px grey;
-    overflow: scroll; /* Scrollbar are always visible */
     overflow: auto;   /* Scrollbar is displayed as it's needed */
 }
 
-#apo table {    
-    border-collapse: collapse;
+#apo td {
+    border-bottom: 1px solid #1e394c;
+    min-width: 30px;
+    max-width: 200px;
+    font-size: 0.8vw;
+    text-align: center;
+    padding: 1px;
+    height: 30px;
+}
+
+#apo tr:nth-child(2n+2) {
+    background-color: #1e394c;
+    color: white;
+}
+
+#apo tr:nth-child(2n+2) {
+    background-color: #1e394c;
+    color: white;
+}
+
+#apo td {
+    border: 1px solid #1e394c;
+}
+
+#apo th {
+    text-align: center;
 }
