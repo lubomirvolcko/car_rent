@@ -80,11 +80,6 @@ $("#inputDelDate").attr("max",today2);
 //SHOW MAP 
     
  $("#ba").click(function(){
-var city = "Bratislava";
-var urllink='http://api.openweathermap.org/data/2.5/weather?q=';
-urllink=urllink + city;
-urllink=urllink+'&appid=9f3132ee22da51a2a27391d8a89eb76f';
-console.log(urllink);
 
   
 
@@ -103,11 +98,7 @@ console.log(urllink);
 
 
   $("#bb").click(function(){
-var city = "Bratislava";
-var urllink='http://api.openweathermap.org/data/2.5/weather?q=';
-urllink=urllink + city;
-urllink=urllink+'&appid=9f3132ee22da51a2a27391d8a89eb76f';
-console.log(urllink);
+
 
   
 
@@ -143,7 +134,7 @@ console.log(urllink);
 
     $("#wien").click(function(){
 
-    var uluru = {lat:48.21, lng:16.37};
+    var uluru = {lat:49.22, lng:18.74};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
           center: uluru
@@ -601,8 +592,13 @@ $("#price").html("On agreement!");
 
 }); 
 
+$('#deliver').prop('disabled', true);
+$("#pickup").change(function(){
+var samevalue=$("#pickup").val();
+
+$("#deliver").val(samevalue);
       
-    
+  });   
 
 
 }); /* function ready */

@@ -27,6 +27,12 @@ input[type=time]::-webkit-clear-button {
     display:none;
 }
 
+#deliver
+{
+
+     -webkit-appearance: none;
+}
+
 input:required {
     box-shadow:none;
 }
